@@ -1,0 +1,33 @@
+{
+  "period_start": "2026-11-12",
+  "period_end": "2026-11-25",
+  "generated_at": "2026-11-25T22:29:59+00:00",
+  "model": "gemini-flash-latest",
+  "shown": {
+    "war_intensity": [
+      "Q3D7C35661439"
+    ],
+    "escalation_risks": [
+      "Q0BD233045CEC",
+      "Q1322C4F71D74",
+      "Q6929B71C77D4",
+      "Q706477F147A2",
+      "QB597A43BDF48",
+      "QF068095F0804",
+      "Q10A9CBE25D7D",
+      "Q570FEF465B29",
+      "Q92AC13E2B83A",
+      "QAF5BBB4A3954",
+      "QF705665963F0"
+    ]
+  },
+  "hidden": [],
+  "summaries": {
+    "war_intensity": "The conflict's reach is expanding geographically, with Ukrainian forces actively targeting Russian Africa Corps mercenaries in Africa.",
+    "escalation_risks": ""
+  },
+  "verbatim_check": "passed",
+  "errors": [
+    "escalation_risks summary: no usable function call in response (StopIteration)"
+  ]
+}

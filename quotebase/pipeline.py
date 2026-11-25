@@ -146,6 +146,9 @@ def process_article(conn, row, src: Source, fetcher: Fetcher, llm: LLM, topic: T
             rejected += 1
             continue
         qid = quote_id(src.id, row["url"], fields["quote_text"])
+        for key in ("speaker", "speaker_role"):
+            if isinstance(q.get(key), str) and q[key].strip().lower() in ("", "null", "none", "n/a", "unknown"):
+                q[key] = None
         cur = conn.execute(
             "INSERT OR IGNORE INTO quotes(quote_id, quote_text, source_id, source_name, publication_date, "
             "article_name, article_url, extraction_date, article_id, char_start, char_end, quote_sha256, "

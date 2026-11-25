@@ -1,0 +1,24 @@
+{
+  "quote": {
+    "quote_id": "Stable ID: 'Q' + first 12 hex chars of sha256(source_id|article_url|quote_text).",
+    "quote_text": "Exact text from the article, as stored in articles.text[char_start:char_end].",
+    "source_id": "Short source key from config/sources.yaml.",
+    "source_name": "Outlet name.",
+    "publication_date": "Article publication time, ISO 8601 UTC.",
+    "article_name": "Article headline.",
+    "article_url": "Link to the original article.",
+    "extraction_date": "When the quote was saved, ISO 8601 UTC.",
+    "section": "Digest section id (config/sections.yaml).",
+    "speaker": "Person or body quoted, if any.",
+    "speaker_role": "Their role, if given.",
+    "quote_kind": "direct_quote | reported_statement | reporting | analysis | data",
+    "rationale": "Why the model proposed the passage.",
+    "char_start": "Start offset in the stored article text.",
+    "char_end": "End offset in the stored article text.",
+    "quote_sha256": "sha256 of quote_text.",
+    "article_text_sha256": "sha256 of the stored article text the offsets refer to.",
+    "model": "Model that proposed the passage.",
+    "prompt_version": "Extraction prompt version.",
+    "verification": "Result of every deterministic check (all true for stored quotes)."
+  }
+}
