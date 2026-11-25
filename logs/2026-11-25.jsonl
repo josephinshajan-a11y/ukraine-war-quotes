@@ -42,3 +42,16 @@
 {"ts": "2026-11-25T22:15:41+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 2, "msg": "model call got 503, waiting (attempt 2)"}
 {"ts": "2026-11-25T22:18:04+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 2, "msg": "model call got 503, waiting (attempt 4)"}
 {"ts": "2026-11-25T22:29:59+00:00", "level": "INFO", "logger": "quotebase.digest", "run_id": 2, "msg": "digest written to /Users/josephin/Documents/GitHub/ukraine-war-quotes/digests/digest_2026-11-25.md ({'quotes_shown': 12, 'hidden': 0, 'errors': 1})"}
+{"ts": "2026-11-25T22:59:42+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 3, "msg": "model call got 429, waiting (attempt 1)"}
+{"ts": "2026-11-25T23:00:12+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 3, "msg": "model call got 429, waiting (attempt 2)"}
+{"ts": "2026-11-25T23:00:50+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 4, "msg": "model call got 429, waiting (attempt 1)"}
+{"ts": "2026-11-25T23:01:12+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 3, "msg": "model call got 429, waiting (attempt 3)"}
+{"ts": "2026-11-25T23:01:20+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 4, "msg": "model call got 429, waiting (attempt 2)"}
+{"ts": "2026-11-25T23:02:54+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 3, "msg": "model call got 503, waiting (attempt 4)"}
+{"ts": "2026-11-25T23:05:13+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 4, "msg": "model call got 429, waiting (attempt 2)"}
+{"ts": "2026-11-25T23:06:04+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 3, "msg": "model call got 429, waiting (attempt 1)"}
+{"ts": "2026-11-25T23:06:13+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 4, "msg": "model call got 429, waiting (attempt 3)"}
+{"ts": "2026-11-25T23:06:34+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 3, "msg": "model call got 429, waiting (attempt 2)"}
+{"ts": "2026-11-25T23:07:35+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 3, "msg": "model call got 429, waiting (attempt 3)"}
+{"ts": "2026-11-25T23:08:19+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 5, "msg": "model call got 429, waiting (attempt 1)"}
+{"ts": "2026-11-25T23:09:05+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 3, "msg": "model call got 429, waiting (attempt 4)"}

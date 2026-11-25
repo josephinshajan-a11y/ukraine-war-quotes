@@ -9,6 +9,7 @@ appears in it character for character."""
 from __future__ import annotations
 
 import json
+import os
 import re
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -20,10 +21,11 @@ from .textmatch import normalize
 
 log = logs.get("digest")
 
-BATCH = 100
-REFERENCE_SAME = 40
-REFERENCE_OTHER = 30
-SUMMARY_MAX_QUOTES = 60
+# Lower these for providers with small per-request token limits.
+BATCH = int(os.environ.get("QUOTEBASE_DIGEST_BATCH", "100"))
+REFERENCE_SAME = int(os.environ.get("QUOTEBASE_DIGEST_REF_SAME", "40"))
+REFERENCE_OTHER = int(os.environ.get("QUOTEBASE_DIGEST_REF_OTHER", "30"))
+SUMMARY_MAX_QUOTES = int(os.environ.get("QUOTEBASE_DIGEST_SUMMARY_QUOTES", "60"))
 
 REVIEW_SYSTEM = """You maintain a rolling two-week briefing of press quotes on Russia's war against Ukraine. For one section of the briefing you get a list of quotes in date order. Your job is to find the quotes that should no longer be shown.
 
@@ -144,7 +146,7 @@ def summarise(llm: LLM, section: dict, shown: list) -> str:
     recent = sorted(shown, key=lambda r: r["publication_date"], reverse=True)[:SUMMARY_MAX_QUOTES]
     user = f"Section: {section['title']}\n\nQuotes:\n\n" + "\n\n".join(_fmt_quote_for_model(r) for r in recent)
     out = llm.json_call(system=SUMMARY_SYSTEM, user=user, schema=SUMMARY_SCHEMA, tool_name="record_summary",
-                        max_tokens=600)
+                        max_tokens=1500)
     return _clean_summary(out.get("summary", ""))
 
 

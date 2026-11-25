@@ -5,13 +5,15 @@ one is accepted, and the stored text always comes from the article."""
 
 from __future__ import annotations
 
+import os
 import re
 
 from .config import load_sections
 from .llm import LLM
 
 PROMPT_VERSION = "extract-v1"
-CHUNK_CHARS = 20000
+# Smaller chunks for providers with low tokens-per-minute limits (Groq free tier: 6000).
+CHUNK_CHARS = int(os.environ.get("QUOTEBASE_CHUNK_CHARS", "20000"))
 
 SYSTEM = """You help an analyst who tracks Russia's war against Ukraine. You read one news or think-tank article and pick out passages that the analyst would want in a briefing on where the war is heading.
 

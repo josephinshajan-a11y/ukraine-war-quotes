@@ -155,6 +155,13 @@ class OpenAICompatLLM:
         temp = os.environ.get("QUOTEBASE_TEMPERATURE", "0")
         if temp != "":
             body["temperature"] = float(temp)
+        cap = os.environ.get("QUOTEBASE_LLM_MAX_TOKENS")
+        if cap:
+            # Some providers count max_tokens against the per-minute token limit.
+            body["max_tokens"] = min(max_tokens, int(cap))
+        effort = os.environ.get("QUOTEBASE_REASONING_EFFORT")
+        if effort:
+            body["reasoning_effort"] = effort
         last = None
         for attempt in range(8):
             self._pace()
