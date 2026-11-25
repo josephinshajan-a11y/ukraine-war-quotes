@@ -25,6 +25,13 @@ class LLMError(Exception):
     pass
 
 
+class QuotaExhausted(LLMError):
+    """Every configured model has used up its daily allowance."""
+
+
+DAILY_LIMIT_MARKERS = ("per day", "(tpd)", "(rpd)", "daily")
+
+
 class LLM(Protocol):
     model: str
 
@@ -126,7 +133,10 @@ class OpenAICompatLLM:
 
     def __init__(self, model: str, base_url: str | None = None, api_key: str | None = None,
                  client: httpx.Client | None = None, min_interval: float | None = None):
-        self.model = model
+        # A comma-separated list: when one model hits its daily limit the next one is used.
+        self.models = [m.strip() for m in model.split(",") if m.strip()]
+        self.index = 0
+        self.model = self.models[0]
         self.base_url = (base_url or SETTINGS.llm_base_url).rstrip("/")
         key = api_key if api_key is not None else SETTINGS.llm_api_key
         headers = {"Content-Type": "application/json"}
@@ -171,11 +181,23 @@ class OpenAICompatLLM:
                 last = f"{type(e).__name__}: {e}"
                 time.sleep(10 * (attempt + 1))
                 continue
+            if r.status_code == 429 and any(m in r.text.lower() for m in DAILY_LIMIT_MARKERS):
+                if self.index + 1 < len(self.models):
+                    self.index += 1
+                    log.warning("daily limit reached on %s, switching to %s", self.model, self.models[self.index])
+                    self.model = self.models[self.index]
+                    body["model"] = self.model
+                    continue
+                _trace(self.model, tool_name, system, user, None, r.text[:500])
+                raise QuotaExhausted(f"daily limit reached on all models ({', '.join(self.models)})")
             if r.status_code == 429 or r.status_code >= 500:
                 # free-tier quota or overload: wait and try again
                 last = f"HTTP {r.status_code}: {r.text[:300]}"
                 log.warning("model call got %s, waiting (attempt %d)", r.status_code, attempt + 1)
                 time.sleep(min(30 * (attempt + 1), 180))
+                continue
+            if r.status_code == 400 and "reasoning" in r.text.lower() and "reasoning_effort" in body:
+                body.pop("reasoning_effort")
                 continue
             if r.status_code >= 400:
                 last = f"HTTP {r.status_code}: {r.text[:500]}"

@@ -55,3 +55,4 @@
 {"ts": "2026-11-25T23:07:35+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 3, "msg": "model call got 429, waiting (attempt 3)"}
 {"ts": "2026-11-25T23:08:19+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 5, "msg": "model call got 429, waiting (attempt 1)"}
 {"ts": "2026-11-25T23:09:05+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 3, "msg": "model call got 429, waiting (attempt 4)"}
+{"ts": "2026-11-25T23:26:54+00:00", "level": "INFO", "logger": "quotebase.digest", "run_id": 6, "msg": "digest written to /Users/josephin/Documents/GitHub/ukraine-war-quotes/digests/digest_2026-11-25.md ({'quotes_shown': 12, 'hidden': 0, 'errors': 3})"}

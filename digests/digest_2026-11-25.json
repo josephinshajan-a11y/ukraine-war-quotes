@@ -1,8 +1,8 @@
 {
   "period_start": "2026-11-12",
   "period_end": "2026-11-25",
-  "generated_at": "2026-11-25T22:29:59+00:00",
-  "model": "gemini-flash-latest",
+  "generated_at": "2026-11-25T23:26:54+00:00",
+  "model": "openai/gpt-oss-120b",
   "shown": {
     "war_intensity": [
       "Q3D7C35661439"
@@ -23,11 +23,13 @@
   },
   "hidden": [],
   "summaries": {
-    "war_intensity": "The conflict's reach is expanding geographically, with Ukrainian forces actively targeting Russian Africa Corps mercenaries in Africa.",
+    "war_intensity": "",
     "escalation_risks": ""
   },
   "verbatim_check": "passed",
   "errors": [
-    "escalation_risks summary: no usable function call in response (StopIteration)"
+    "war_intensity review: HTTP 400: {\"error\":{\"message\":\"Tool choice is required, but model did not call a tool\",\"type\":\"invalid_request_error\",\"code\":\"tool_use_failed\",\"failed_generation\":\"**No quotes in the TO REVIEW list need to be hidden.**\"}}\n",
+    "war_intensity summary: HTTP 400: {\"error\":{\"message\":\"Tool choice is required, but model did not call a tool\",\"type\":\"invalid_request_error\",\"code\":\"tool_use_failed\",\"failed_generation\":\"The quotes indicate the conflict is expanding beyond Ukraine’s borders, with Ukrainian forces now striking Russian mercenary groups in Africa, signaling a widening of the war’s geographic scope.\"}}\n",
+    "escalation_risks summary: HTTP 400: {\"error\":{\"message\":\"Tool choice is required, but model did not call a tool\",\"type\":\"invalid_request_error\",\"code\":\"tool_use_failed\",\"failed_generation\":\"The collection of reports points to a clear escalation, with Russian drones and missiles striking NATO members, covert attacks on neighboring states, and plans for a nuclear‑armed anti‑satellite weapon heightening spill‑over risks.\"}}\n"
   ]
 }

@@ -14,7 +14,7 @@ from .config import SETTINGS, Source, load_sections, load_sources
 from .discovery import TopicFilter, canonical_url, discover
 from .extract import PROMPT_VERSION, propose
 from .http import FetchError, Fetcher
-from .llm import LLM, LLMError
+from .llm import LLM, LLMError, QuotaExhausted
 from .verify import build_quote, quote_id, sha256
 
 log = logs.get("pipeline")
@@ -117,6 +117,8 @@ def process_article(conn, row, src: Source, fetcher: Fetcher, llm: LLM, topic: T
     try:
         proposal = propose(llm, title=row["title"] or "", source_name=src.name,
                            published_at=row["published_at"], url=row["url"], text=text)
+    except QuotaExhausted:
+        raise
     except LLMError as e:
         db.set_article(conn, aid, status="extract_failed", status_detail=str(e))
         db.log_event(conn, run_id, "ERROR", "extract_failed", {"url": row["url"], "error": str(e)})
@@ -182,6 +184,12 @@ def process_pending(conn, fetcher: Fetcher, llm: LLM, sources: list[Source], win
         try:
             process_article(conn, row, by_id[row["source_id"]], fetcher, llm, topic,
                             window_start.isoformat(), run_id, stats)
+        except QuotaExhausted as e:
+            # Remaining articles stay pending and are picked up by the next run.
+            db.log_event(conn, run_id, "WARNING", "model_quota_exhausted", {"error": str(e)})
+            log.warning("%s; stopping, %d articles left for the next run", e, len(rows) - rows.index(row))
+            stats["stopped_on_quota"] = 1
+            break
         except Exception as e:  # one bad article must not stop the run
             db.set_article(conn, row["id"], status="extract_failed", status_detail=f"{type(e).__name__}: {e}")
             db.log_event(conn, run_id, "ERROR", "article_error",

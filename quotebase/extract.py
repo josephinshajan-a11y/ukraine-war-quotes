@@ -86,9 +86,27 @@ def schema(section_ids: list[str]) -> dict:
     }
 
 
+def trim_to_topic(text: str) -> str:
+    """Keep paragraphs that mention the war, plus the paragraph before and
+    after each (speakers are often named one paragraph earlier). Used to save
+    tokens on small free tiers. Quotes are still checked against the full text."""
+    from .discovery import TopicFilter
+
+    topic = TopicFilter()
+    blocks = text.split("\n\n")
+    keep = set()
+    for i, b in enumerate(blocks):
+        if topic.body.search(b):
+            keep.update({i - 1, i, i + 1})
+    kept = [b for i, b in enumerate(blocks) if i in keep]
+    return "\n\n".join(kept) if kept else text
+
+
 def propose(llm: LLM, *, title: str, source_name: str, published_at: str, url: str, text: str) -> dict:
     sections = load_sections()
     ids = [s["id"] for s in sections]
+    if os.environ.get("QUOTEBASE_TRIM_TO_TOPIC") == "1":
+        text = trim_to_topic(text)
     chunks = chunk_text(text)
     relevant_any = False
     reasons = []

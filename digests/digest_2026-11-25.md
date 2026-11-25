@@ -1,6 +1,6 @@
 # Russia's war on Ukraine: media quotes, 12 November 2026 to 25 November 2026
 
-Period: 2026-11-12 to 2026-11-25 (last 14 days). Generated 2026-11-25 22:29 UTC.
+Period: 2026-11-12 to 2026-11-25 (last 14 days). Generated 2026-11-25 23:26 UTC.
 12 quotes from 1 sources (BBC News). 0 older quotes left out as superseded or repeated; see the JSON file with the same name for the reasons.
 
 Quote text and source details are copied unchanged from the database. The short summary under each heading is written by a language model.
@@ -18,11 +18,9 @@ Quote text and source details are copied unchanged from the database. The short 
 
 ## War Intensity and Battlefield
 
-**Summary (model-written):** The conflict's reach is expanding geographically, with Ukrainian forces actively targeting Russian Africa Corps mercenaries in Africa.
-
 > And Ukraine has also been active further south in Africa where its forces have targeted Russian mercenaries from the Africa Corps, the successor to the infamous Wagner Group that was accused of carrying out numerous human rights abuses.
 
-Source: BBC News | Published: 2026-11-23 | Speaker: null | Article: [What strike on Russian ship in Libya says about spread of Ukraine war](https://www.bbc.co.uk/news/articles/cm894p88jzxpo) | ID: `Q3D7C35661439`
+Source: BBC News | Published: 2026-11-23 | Article: [What strike on Russian ship in Libya says about spread of Ukraine war](https://www.bbc.co.uk/news/articles/cm894p88jzxpo) | ID: `Q3D7C35661439`
 
 ## Peace Initiatives and Negotiations
 
@@ -68,13 +66,13 @@ Source: BBC News | Published: 2026-11-24 | Speaker: Dmitry Peskov | Article: [Na
 
 > Germany's Leipzig-Halle airport, which is used as a resupply hub by Ukraine's cargo aircraft, was targeted in August by three explosive drones that were discovered before anyone was hurt.
 
-Source: BBC News | Published: 2026-11-23 | Speaker: null | Article: [What strike on Russian ship in Libya says about spread of Ukraine war](https://www.bbc.co.uk/news/articles/cm894p88jzxpo) | ID: `QF068095F0804`
+Source: BBC News | Published: 2026-11-23 | Article: [What strike on Russian ship in Libya says about spread of Ukraine war](https://www.bbc.co.uk/news/articles/cm894p88jzxpo) | ID: `QF068095F0804`
 
 > The three Baltic states – Estonia, Latvia and Lithuania – all have borders with Russia and all consider themselves right on the front lines in this war.
 >
 > There have been a number of anonymous attacks on military industrial facilities in these countries, blamed on agents acting on Moscow's behalf.
 
-Source: BBC News | Published: 2026-11-23 | Speaker: null | Article: [What strike on Russian ship in Libya says about spread of Ukraine war](https://www.bbc.co.uk/news/articles/cm894p88jzxpo) | ID: `QB597A43BDF48`
+Source: BBC News | Published: 2026-11-23 | Article: [What strike on Russian ship in Libya says about spread of Ukraine war](https://www.bbc.co.uk/news/articles/cm894p88jzxpo) | ID: `QB597A43BDF48`
 
 > On Friday, several Russian projectiles landed well inside Poland's borders, just 60 miles from an Anglo-French exercise of forces intended to be deployed following an eventual ceasefire in Ukraine.
 >
@@ -96,7 +94,7 @@ Source: BBC News | Published: 2026-11-23 | Speaker: Volodymyr Zelensky | Article
 >
 > In the case of Romania, a Nato member, fast jets have had to be scrambled to intercept incoming Russian drones and there is a profound suspicion that these incursions are not all accidental.
 
-Source: BBC News | Published: 2026-11-23 | Speaker: null | Article: [What strike on Russian ship in Libya says about spread of Ukraine war](https://www.bbc.co.uk/news/articles/cm894p88jzxpo) | ID: `Q0BD233045CEC`
+Source: BBC News | Published: 2026-11-23 | Article: [What strike on Russian ship in Libya says about spread of Ukraine war](https://www.bbc.co.uk/news/articles/cm894p88jzxpo) | ID: `Q0BD233045CEC`
 
 ## Domestic Politics and Public Opinion
 
