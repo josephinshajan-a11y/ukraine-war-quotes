@@ -83,6 +83,9 @@ class Source:
     url_exclude: list[str] = field(default_factory=list)
     boilerplate: list[str] = field(default_factory=list)
     gdelt: bool = True
+    # URL prefixes to look up in the Internet Archive's capture index (for
+    # sites that block their own sitemaps, such as Reuters).
+    wayback_prefixes: list[str] = field(default_factory=list)
     enabled: bool = True
     kind: str = "media"
     notes: str = ""

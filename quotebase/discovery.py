@@ -203,6 +203,44 @@ def gdelt_range(fetcher: Fetcher, source: Source, start: date, end: date) -> lis
     return out
 
 
+# Internet Archive capture index ---------------------------------------------------
+
+CDX_URL = "https://web.archive.org/cdx/search/cdx"
+URL_DATE = re.compile(r"-(20\d\d-\d\d-\d\d)/?$")
+
+
+def wayback_range(fetcher: Fetcher, source: Source, start: date, end: date) -> list[Candidate]:
+    """Article URLs the Internet Archive saved under the source's prefixes,
+    one day at a time. Reuters puts the publication date at the end of its
+    URLs, which is used as the date when present."""
+    out = []
+    day = start
+    while day <= end:
+        for prefix in source.wayback_prefixes:
+            params = {
+                "url": prefix, "matchType": "prefix", "output": "json",
+                "from": day.strftime("%Y%m%d"), "to": day.strftime("%Y%m%d"),
+                "filter": "statuscode:200", "collapse": "urlkey",
+                "fl": "original,timestamp", "limit": "5000",
+            }
+            try:
+                res = fetcher.get(f"{CDX_URL}?{urlencode(params)}", accept="application/json", retries=4)
+                rows = json.loads(res.text) if res.text.strip() else []
+            except (FetchError, json.JSONDecodeError) as e:
+                log.warning("archive index failed for %s %s: %s", prefix, day, getattr(e, "reason", e))
+                continue
+            for row in rows[1:]:
+                url = row[0].replace("http://", "https://", 1).replace(":80/", "/", 1).split("?")[0]
+                # section and index pages have short last segments; articles have slugs
+                if url.rstrip("/").rsplit("/", 1)[-1].count("-") < 3:
+                    continue
+                m = URL_DATE.search(url)
+                published = f"{m.group(1)}T00:00:00+00:00" if m else None
+                out.append(Candidate(url, None, published, None, "wayback"))
+        day += timedelta(days=1)
+    return out
+
+
 # per-source discovery ------------------------------------------------------------
 
 def discover(fetcher: Fetcher, source: Source, start: date, end: date, *, mode: str) -> tuple[list[Candidate], list[str]]:
@@ -232,10 +270,12 @@ def discover(fetcher: Fetcher, source: Source, start: date, end: date, *, mode: 
         for child in children:
             found += attempt(f"sitemap {child}", read_sitemap, fetcher, child)
 
-    # On daily runs GDELT is only used when the source's own feeds and
-    # sitemaps gave nothing (blocked, as Reuters often is, or none set up).
-    # Backfills always use it, because feeds only list recent items.
-    if source.gdelt and (mode == "backfill" or not found):
+    # When the source's own feeds and sitemaps give nothing (Reuters blocks
+    # them), fall back to the Internet Archive index, then GDELT.
+    if source.wayback_prefixes and not found:
+        found += wayback_range(fetcher, source, start, end)
+        log.info("%s archive index: %d links", source.id, len(found))
+    if source.gdelt and not found:
         found += gdelt_range(fetcher, source, start, end)
 
     # de-duplicate, keep the first sighting but fill missing fields from later ones

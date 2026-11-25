@@ -21,6 +21,10 @@ sources:
     news_sitemaps:
       - https://www.reuters.com/arc/outboundfeeds/news-sitemap/?outputType=xml
     sitemap_index: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+    wayback_prefixes:
+      - reuters.com/world/
+      - reuters.com/business/
+      - reuters.com/markets/
     url_include:
       - '^https://www\.reuters\.com/(world|business|markets|breakingviews|legal|technology|sustainability|investigates)/'
     url_exclude:
