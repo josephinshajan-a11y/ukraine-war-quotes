@@ -169,7 +169,7 @@ def gdelt_window(fetcher: Fetcher, domain: str, start: datetime, end: datetime, 
     }
     url = f"{GDELT_URL}?{urlencode(params)}"
     # GDELT asks clients to keep to one request every five seconds.
-    res = fetcher.get(url, accept="application/json", min_delay=5.0)
+    res = fetcher.get(url, accept="application/json", min_delay=6.0, retries=5)
     try:
         data = json.loads(res.text) if res.text.strip() else {}
     except json.JSONDecodeError:
@@ -232,7 +232,10 @@ def discover(fetcher: Fetcher, source: Source, start: date, end: date, *, mode: 
         for child in children:
             found += attempt(f"sitemap {child}", read_sitemap, fetcher, child)
 
-    if source.gdelt:
+    # On daily runs GDELT is only used when the source's own feeds and
+    # sitemaps gave nothing (blocked, as Reuters often is, or none set up).
+    # Backfills always use it, because feeds only list recent items.
+    if source.gdelt and (mode == "backfill" or not found):
         found += gdelt_range(fetcher, source, start, end)
 
     # de-duplicate, keep the first sighting but fill missing fields from later ones

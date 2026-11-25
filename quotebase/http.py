@@ -104,6 +104,9 @@ class Fetcher:
                     retry_after = r.headers.get("Retry-After")
                     if retry_after and retry_after.isdigit():
                         _sleep(min(int(retry_after), 60))
+                    elif r.status_code == 429:
+                        # rate limited with no hint: back off harder than for other errors
+                        _sleep(20 * attempt)
                 elif r.status_code >= 400:
                     raise FetchError(url, f"HTTP {r.status_code}", r.status_code)
                 else:
