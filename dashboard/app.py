@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import html
 import json
+import os
 import subprocess
 import sys
 from datetime import date, datetime, timedelta, timezone
@@ -166,8 +167,12 @@ briefing: {window_start} to {today.isoformat()}.</div></div>{pill}</div>
     unsafe_allow_html=True,
 )
 
-tab_brief, tab_quotes, tab_articles, tab_runs, tab_sources, tab_actions = st.tabs(
-    ["Briefing", "Quotes", "Articles", "Runs and logs", "Sources", "Actions"])
+# The Actions tab starts jobs and uses the model API, so it only shows where
+# QUOTEBASE_ADMIN=1 is set (your own machine). A public deployment is read-only.
+ADMIN = os.environ.get("QUOTEBASE_ADMIN") == "1"
+tab_names = ["Briefing", "Quotes", "Articles", "Runs and logs", "Sources"] + (["Actions"] if ADMIN else [])
+tab_brief, tab_quotes, tab_articles, tab_runs, tab_sources, *rest = st.tabs(tab_names)
+tab_actions = rest[0] if rest else None
 
 # briefing -------------------------------------------------------------------------
 
@@ -395,33 +400,34 @@ with tab_sources:
 
 # actions ------------------------------------------------------------------------------------
 
-with tab_actions:
-    a1, a2 = st.columns(2)
-    with a1.container(border=True):
-        st.markdown("**Collect quotes for a past period**")
-        b_from = st.date_input("From", date(2026, 8, 1), key="bf")
-        b_to = st.date_input("To", date(2026, 9, 30), key="bt")
-        b_src = st.multiselect("Sources", [s.id for s in config.load_sources()], placeholder="All sources")
-        if st.button("Run backfill", type="primary"):
-            args = ["backfill", "--from", b_from.isoformat(), "--to", b_to.isoformat()]
-            for s in b_src:
-                args += ["--source", s]
-            run_cli(args)
-    with a2.container(border=True):
-        st.markdown("**Add a media or think-tank source**")
-        n_name = st.text_input("Name", placeholder="Carnegie Endowment")
-        n_url = st.text_input("Homepage", placeholder="https://carnegieendowment.org")
-        n_kind = st.selectbox("Kind", ["media", "think-tank"])
-        if st.button("Add and collect from 1 Oct 2026", type="primary") and n_name and n_url:
-            run_cli(["add-source", "--name", n_name, "--url", n_url, "--kind", n_kind])
-    with st.container(border=True):
-        st.markdown("**Maintenance**")
-        c1, c2, c3, c4 = st.columns(4)
-        if c1.button("Daily run now", width="stretch"):
-            run_cli(["daily"])
-        if c2.button("Rebuild briefing", width="stretch"):
-            run_cli(["digest"])
-        if c3.button("Re-verify all quotes", width="stretch"):
-            run_cli(["verify-db"])
-        if c4.button("Check feeds", width="stretch"):
-            run_cli(["check-sources"])
+if tab_actions is not None:
+    with tab_actions:
+        a1, a2 = st.columns(2)
+        with a1.container(border=True):
+            st.markdown("**Collect quotes for a past period**")
+            b_from = st.date_input("From", date(2026, 8, 1), key="bf")
+            b_to = st.date_input("To", date(2026, 9, 30), key="bt")
+            b_src = st.multiselect("Sources", [s.id for s in config.load_sources()], placeholder="All sources")
+            if st.button("Run backfill", type="primary"):
+                args = ["backfill", "--from", b_from.isoformat(), "--to", b_to.isoformat()]
+                for s in b_src:
+                    args += ["--source", s]
+                run_cli(args)
+        with a2.container(border=True):
+            st.markdown("**Add a media or think-tank source**")
+            n_name = st.text_input("Name", placeholder="Carnegie Endowment")
+            n_url = st.text_input("Homepage", placeholder="https://carnegieendowment.org")
+            n_kind = st.selectbox("Kind", ["media", "think-tank"])
+            if st.button("Add and collect from 1 Oct 2026", type="primary") and n_name and n_url:
+                run_cli(["add-source", "--name", n_name, "--url", n_url, "--kind", n_kind])
+        with st.container(border=True):
+            st.markdown("**Maintenance**")
+            c1, c2, c3, c4 = st.columns(4)
+            if c1.button("Daily run now", width="stretch"):
+                run_cli(["daily"])
+            if c2.button("Rebuild briefing", width="stretch"):
+                run_cli(["digest"])
+            if c3.button("Re-verify all quotes", width="stretch"):
+                run_cli(["verify-db"])
+            if c4.button("Check feeds", width="stretch"):
+                run_cli(["check-sources"])
