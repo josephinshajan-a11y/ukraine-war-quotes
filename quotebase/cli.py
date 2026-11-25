@@ -15,8 +15,14 @@ def _date(s: str) -> date:
 
 
 def _need_key():
-    if not config.SETTINGS.anthropic_api_key:
-        sys.exit("ANTHROPIC_API_KEY is not set. Put it in .env or export it.")
+    s = config.SETTINGS
+    if s.llm_provider == "openai":
+        local = "localhost" in s.llm_base_url or "127.0.0.1" in s.llm_base_url
+        if not s.llm_api_key and not local:
+            sys.exit("QUOTEBASE_LLM_API_KEY is not set. Put it in .env or export it.")
+    elif not s.anthropic_api_key:
+        sys.exit("ANTHROPIC_API_KEY is not set. Put it in .env, or set QUOTEBASE_LLM_PROVIDER=openai "
+                 "to use Gemini or another OpenAI-compatible API.")
 
 
 def cmd_init(a):

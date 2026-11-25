@@ -42,7 +42,14 @@ DIGEST_WINDOW_DAYS = 14
 
 @dataclass
 class Settings:
+    # "anthropic" or "openai" (any OpenAI-compatible API: Gemini, Groq, Ollama, OpenAI)
+    llm_provider: str = os.environ.get("QUOTEBASE_LLM_PROVIDER", "anthropic").lower()
     anthropic_api_key: str | None = os.environ.get("ANTHROPIC_API_KEY")
+    llm_base_url: str = os.environ.get("QUOTEBASE_LLM_BASE_URL",
+                                       "https://generativelanguage.googleapis.com/v1beta/openai/")
+    llm_api_key: str | None = os.environ.get("QUOTEBASE_LLM_API_KEY")
+    # Seconds to wait between model calls; free tiers allow only a few requests per minute.
+    llm_min_interval: float = float(os.environ.get("QUOTEBASE_LLM_MIN_INTERVAL", "0") or 0)
     extract_model: str = os.environ.get("QUOTEBASE_EXTRACT_MODEL", "claude-sonnet-5-5")
     digest_model: str = os.environ.get("QUOTEBASE_DIGEST_MODEL", "claude-opus-5-5")
     user_agent: str = os.environ.get(

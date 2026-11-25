@@ -7,9 +7,12 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import re
 import time
 from datetime import datetime, timezone
 from typing import Callable, Protocol
+
+import httpx
 
 from . import logs
 from . import config
@@ -101,6 +104,102 @@ class FakeLLM:
         return result
 
 
+def _plain_schema(node):
+    """Some OpenAI-compatible servers (Gemini among them) reject union types
+    like ["string", "null"]. Keep the first non-null type."""
+    if isinstance(node, dict):
+        out = {}
+        for k, v in node.items():
+            if k == "type" and isinstance(v, list):
+                out[k] = next((t for t in v if t != "null"), "string")
+            else:
+                out[k] = _plain_schema(v)
+        return out
+    if isinstance(node, list):
+        return [_plain_schema(x) for x in node]
+    return node
+
+
+class OpenAICompatLLM:
+    """Chat Completions API with a forced function call. Works with the
+    Gemini API (free tier), Groq, a local Ollama server, or OpenAI itself."""
+
+    def __init__(self, model: str, base_url: str | None = None, api_key: str | None = None,
+                 client: httpx.Client | None = None, min_interval: float | None = None):
+        self.model = model
+        self.base_url = (base_url or SETTINGS.llm_base_url).rstrip("/")
+        key = api_key if api_key is not None else SETTINGS.llm_api_key
+        headers = {"Content-Type": "application/json"}
+        if key:
+            headers["Authorization"] = f"Bearer {key}"
+        self.client = client or httpx.Client(timeout=300, headers=headers)
+        self.min_interval = SETTINGS.llm_min_interval if min_interval is None else min_interval
+        self._last = 0.0
+
+    def _pace(self):
+        wait = self.min_interval - (time.monotonic() - self._last)
+        if wait > 0:
+            time.sleep(wait)
+        self._last = time.monotonic()
+
+    def json_call(self, *, system: str, user: str, schema: dict, tool_name: str, max_tokens: int = 8000) -> dict:
+        body = {
+            "model": self.model,
+            "max_tokens": max_tokens,
+            "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
+            "tools": [{"type": "function", "function": {
+                "name": tool_name, "description": "Return the result in this structure.",
+                "parameters": _plain_schema(schema)}}],
+            "tool_choice": {"type": "function", "function": {"name": tool_name}},
+        }
+        temp = os.environ.get("QUOTEBASE_TEMPERATURE", "0")
+        if temp != "":
+            body["temperature"] = float(temp)
+        last = None
+        for attempt in range(8):
+            self._pace()
+            try:
+                r = self.client.post(f"{self.base_url}/chat/completions", json=body)
+            except httpx.HTTPError as e:
+                last = f"{type(e).__name__}: {e}"
+                time.sleep(10 * (attempt + 1))
+                continue
+            if r.status_code == 429 or r.status_code >= 500:
+                # free-tier quota or overload: wait and try again
+                last = f"HTTP {r.status_code}: {r.text[:300]}"
+                log.warning("model call got %s, waiting (attempt %d)", r.status_code, attempt + 1)
+                time.sleep(min(30 * (attempt + 1), 180))
+                continue
+            if r.status_code >= 400:
+                last = f"HTTP {r.status_code}: {r.text[:500]}"
+                break
+            data = r.json()
+            try:
+                msg = data["choices"][0]["message"]
+                call = next(c for c in msg.get("tool_calls") or [] if c["function"]["name"] == tool_name)
+                result = json.loads(call["function"]["arguments"])
+            except (KeyError, IndexError, StopIteration, json.JSONDecodeError, TypeError) as e:
+                # some servers put the JSON in the message text instead
+                text = (data.get("choices") or [{}])[0].get("message", {}).get("content") or ""
+                m = re.search(r"\{.*\}", text, re.S)
+                if m:
+                    try:
+                        result = json.loads(m.group(0))
+                    except json.JSONDecodeError:
+                        result = None
+                else:
+                    result = None
+                if result is None:
+                    last = f"no usable function call in response ({type(e).__name__})"
+                    continue
+            _trace(self.model, tool_name, system, user, result, None, data.get("usage"))
+            return result
+        _trace(self.model, tool_name, system, user, None, last)
+        raise LLMError(last or "model call failed")
+
+
 def default(kind: str) -> LLM:
     model = SETTINGS.extract_model if kind == "extract" else SETTINGS.digest_model
+    if SETTINGS.llm_provider == "openai":
+        return OpenAICompatLLM(model)
     return AnthropicLLM(model)
