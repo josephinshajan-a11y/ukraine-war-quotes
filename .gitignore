@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+.env
+.pytest_cache/
+
+# raw HTML snapshots are large; the cleaned text and its hash are in the database
+data/raw/
+# rebuilt by `quotebase export`
+data/vault/
+data/*.db-wal
+data/*.db-shm

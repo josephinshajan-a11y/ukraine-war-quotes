@@ -1,0 +1,74 @@
+name: daily
+
+on:
+  schedule:
+    - cron: "17 5 * * *"   # 05:17 UTC every day
+  workflow_dispatch:
+    inputs:
+      command:
+        description: "daily | backfill | add-source | digest"
+        default: daily
+      from:
+        description: "backfill start (YYYY-MM-DD)"
+        required: false
+      to:
+        description: "backfill end (YYYY-MM-DD)"
+        required: false
+      name:
+        description: "add-source: name"
+        required: false
+      url:
+        description: "add-source: homepage URL"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: quotebase
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      QUOTEBASE_COOKIES_FT: ${{ secrets.QUOTEBASE_COOKIES_FT }}
+      QUOTEBASE_COOKIES_ECONOMIST: ${{ secrets.QUOTEBASE_COOKIES_ECONOMIST }}
+      QUOTEBASE_COOKIES_BLOOMBERG: ${{ secrets.QUOTEBASE_COOKIES_BLOOMBERG }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -e ".[dev]"
+
+      - run: python -m pytest -q
+
+      - name: Run
+        run: |
+          CMD="${{ github.event.inputs.command || 'daily' }}"
+          case "$CMD" in
+            daily)      quotebase daily ;;
+            digest)     quotebase digest ;;
+            backfill)   quotebase backfill --from "${{ github.event.inputs.from }}" ${{ github.event.inputs.to && format('--to {0}', github.event.inputs.to) || '' }} ;;
+            add-source) quotebase add-source --name "${{ github.event.inputs.name }}" --url "${{ github.event.inputs.url }}" ;;
+            *) echo "unknown command $CMD"; exit 1 ;;
+          esac
+
+      - name: Verify stored quotes
+        run: quotebase verify-db
+
+      - name: Commit results
+        if: always()
+        run: |
+          sqlite3 data/quotes.db "PRAGMA wal_checkpoint(TRUNCATE);" || true
+          git config user.name "quotebase-bot"
+          git config user.email "quotebase-bot@users.noreply.github.com"
+          git add data/quotes.db data/export digests logs config/sources.d
+          git diff --cached --quiet || git commit -m "data: ${{ github.event.inputs.command || 'daily' }} run $(date -u +%F)"
+          git push

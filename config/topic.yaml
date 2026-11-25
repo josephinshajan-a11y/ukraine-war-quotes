@@ -1,0 +1,68 @@
+# Deterministic relevance rules. They decide which articles are fetched
+# and sent to the model. Matching is case-insensitive on word boundaries.
+
+name: Russia's war on Ukraine
+
+# A discovered link passes the first filter if its title, summary or URL
+# matches at least one of these.
+headline_terms:
+  - ukrain\w*
+  - kyiv
+  - kiev
+  - zelensk\w*
+  - kremlin
+  - putin
+  - russia\w*
+  - moscow
+  - donbas\w*
+  - donetsk
+  - luhansk
+  - crimea\w*
+  - kharkiv
+  - zaporizh\w*
+  - kherson
+  - odesa
+  - odessa
+  - pokrovsk
+  - kursk
+  - black sea
+  - peskov
+  - lavrov
+  - shoigu
+  - belousov
+  - gerasimov
+  - syrskyi
+  - umerov
+  - sybiha
+  - yermak
+  - svyrydenko
+  - witkoff
+  - kellogg
+  - dmitriev
+  - ceasefire
+  - peace (talks|deal|plan|negotiations)
+  - coalition of the willing
+  - sanction\w*
+  - shadow fleet
+  - nato
+
+# After the article is downloaded, its headline and body must contain at least
+# `min_body_hits` matches of these terms, counting all of them together.
+body_terms:
+  - ukrain\w*
+  - kyiv
+  - kiev
+  - zelensk\w*
+  - russia\w*
+  - kremlin
+  - putin
+  - moscow
+  - donbas\w*
+  - crimea\w*
+min_body_hits: 3
+
+# Headlines matching any of these are dropped even if a term above matched
+# (sport, culture and other noise that mention Russia or Ukraine).
+headline_exclude:
+  - \b(football|tennis|olympic|eurovision|fifa|uefa|chess|figure skating|recipe|horoscope)\b
+  - \bweather\b

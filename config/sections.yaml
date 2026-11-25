@@ -1,0 +1,57 @@
+# Digest sections. The id is stored on every quote. The order here is the
+# order in the digest file.
+
+sections:
+  - id: war_intensity
+    title: War Intensity and Battlefield
+    scope: >
+      Front-line movement, offensives, territorial gains or losses, strike
+      volumes (missiles, drones, glide bombs), casualty estimates, tempo of
+      fighting, assessments of whether fighting is escalating or easing.
+
+  - id: peace_initiatives
+    title: Peace Initiatives and Negotiations
+    scope: >
+      Peace plans, ceasefire proposals, talks, mediation, positions of the
+      parties on terms, security guarantees, statements on prospects for a deal.
+
+  - id: international_support
+    title: International Support for Ukraine
+    scope: >
+      Military, financial and political aid to Ukraine, weapons deliveries,
+      use of frozen Russian assets, EU and NATO decisions, US policy, coalition
+      of the willing, reconstruction funding.
+
+  - id: sanctions
+    title: Sanctions and Economic Pressure on Russia
+    scope: >
+      New or lifted sanctions, enforcement, oil price cap, shadow fleet,
+      tariffs on buyers of Russian energy, effects of sanctions on Russia's
+      revenues and trade.
+
+  - id: resources
+    title: Conflicting Parties' Resources
+    scope: >
+      Manpower and mobilisation, recruitment, defence production, ammunition
+      and drone output, budgets and military spending, economic condition of
+      Russia and Ukraine (growth, inflation, deficits, energy revenue),
+      third-country support to Russia (North Korea, Iran, China).
+
+  - id: energy_infrastructure
+    title: Energy and Critical Infrastructure
+    scope: >
+      Strikes on power grids, refineries, ports and pipelines, blackouts,
+      gas transit, nuclear plant safety (Zaporizhzhia), Black Sea shipping.
+
+  - id: escalation_risks
+    title: Escalation Risks and Spillover
+    scope: >
+      Threats to NATO states, airspace incursions, sabotage, nuclear rhetoric,
+      hybrid attacks in Europe, risk of wider war.
+
+  - id: domestic_politics
+    title: Domestic Politics and Public Opinion
+    scope: >
+      Politics in Ukraine and Russia that bears on the war: leadership changes,
+      elections, corruption cases, martial law, public support for the war or
+      for a settlement, war fatigue.

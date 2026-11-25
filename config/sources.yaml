@@ -1,0 +1,179 @@
+# Sources checked on every daily run.
+#
+# feeds          RSS/Atom feeds, read every day
+# news_sitemaps  Google News sitemaps (articles from the last ~48h)
+# sitemap_index  sitemap index used for backfills (children filtered by <lastmod>)
+# gdelt          also query the GDELT DOC API for this source's domains
+#                (used for backfills and as a second net on daily runs)
+# url_include    regexes; if set, a URL must match one of them
+# url_exclude    regexes; a URL matching any of them is dropped
+# boilerplate    extra regexes for lines to strip from article text
+#
+# Feed and sitemap URLs were taken from the publishers' sites. Run
+# `quotebase check-sources` after install to confirm they still answer.
+
+sources:
+  - id: reuters
+    name: Reuters
+    homepage: https://www.reuters.com
+    domains: [reuters.com]
+    feeds: []
+    news_sitemaps:
+      - https://www.reuters.com/arc/outboundfeeds/news-sitemap/?outputType=xml
+    sitemap_index: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+    url_include:
+      - '^https://www\.reuters\.com/(world|business|markets|breakingviews|legal|technology|sustainability|investigates)/'
+    url_exclude:
+      - '/video/'
+      - '/pictures/'
+      - '/graphics/'
+    boilerplate:
+      - '^(Reporting|Additional reporting|Writing|Editing) by '
+      - '^Our Standards:'
+      - '^Sign up here'
+      - 'The Thomson Reuters Trust Principles'
+      - '^Get a look at tomorrow'
+      - 'opens new tab$'
+    gdelt: true
+    notes: >
+      Reuters blocks many automated clients. The fetcher falls back to the
+      Internet Archive copy, then (if enabled) a headless browser. The archive
+      URL is recorded in fetched_via; the stored link is always reuters.com.
+
+  - id: bbc
+    name: BBC News
+    homepage: https://www.bbc.co.uk/news
+    domains: [bbc.co.uk, bbc.com]
+    feeds:
+      - https://feeds.bbci.co.uk/news/world/europe/rss.xml
+      - https://feeds.bbci.co.uk/news/world/rss.xml
+      - https://feeds.bbci.co.uk/news/rss.xml
+      - https://feeds.bbci.co.uk/news/uk/rss.xml
+      - https://feeds.bbci.co.uk/news/business/rss.xml
+      - https://feeds.bbci.co.uk/news/politics/rss.xml
+    news_sitemaps:
+      - https://www.bbc.co.uk/sitemaps/https-sitemap-uk-news-1.xml
+      - https://www.bbc.com/sitemaps/https-sitemap-com-news-1.xml
+    sitemap_index: https://www.bbc.co.uk/sitemaps/https-index-uk-archive.xml
+    url_include:
+      - '/news/articles/[a-z0-9]+'
+      - '/news/[a-z-]+-\d{6,}'
+    url_exclude:
+      - '/news/live/'
+      - '/av/'
+      - '/videos/'
+      - '/sport/'
+      - '/newsround/'
+      - '/programmes/'
+    boilerplate:
+      - '^Image (source|caption),'
+      - '^Getty Images$'
+      - '^Watch: '
+      - '^Listen: '
+      - '^Sign up for our'
+      - '^Follow BBC'
+      - '^Related (topics|internet links)'
+      - '^More on this story'
+    gdelt: true
+    notes: Live pages are excluded because their text changes after publication.
+
+  # Optional extra sources. They follow the same pipeline.
+
+  - id: guardian
+    name: The Guardian
+    homepage: https://www.theguardian.com
+    domains: [theguardian.com]
+    feeds:
+      - https://www.theguardian.com/world/ukraine/rss
+      - https://www.theguardian.com/world/russia/rss
+    url_include:
+      - '/\d{4}/[a-z]{3}/\d{2}/'
+    url_exclude:
+      - '/live/'
+      - '/video/'
+      - '/gallery/'
+      - '/audio/'
+    boilerplate:
+      - '^Explore more on these topics'
+      - '^Reuse this content'
+      - '^Photograph:'
+    gdelt: true
+
+  - id: kyiv-independent
+    name: The Kyiv Independent
+    homepage: https://kyivindependent.com
+    domains: [kyivindependent.com]
+    feeds:
+      - https://kyivindependent.com/news-archive/rss/
+    url_exclude:
+      - '/tag/'
+      - '/author/'
+    boilerplate:
+      - '^Support independent journalism'
+      - '^Become a member'
+      - '^Read also:'
+    gdelt: true
+
+  - id: aljazeera
+    name: Al Jazeera
+    homepage: https://www.aljazeera.com
+    domains: [aljazeera.com]
+    feeds:
+      - https://www.aljazeera.com/xml/rss/all.xml
+    url_include:
+      - '/(news|economy|features|opinions)/\d{4}/\d{1,2}/\d{1,2}/'
+    url_exclude:
+      - '/video/'
+      - '/gallery/'
+      - '/liveblog/'
+    gdelt: true
+
+  - id: isw
+    name: Institute for the Study of War
+    kind: think-tank
+    homepage: https://understandingwar.org
+    domains: [understandingwar.org]
+    feeds:
+      - https://understandingwar.org/feed/
+    url_exclude:
+      - '/staff/'
+      - '/about/'
+    gdelt: true
+    notes: Daily campaign assessments are long; the extractor splits them into chunks.
+
+  # Paywalled. Kept here so they can be switched on with a subscriber
+  # session (see README, "Paywalled sources").
+
+  - id: ft
+    name: Financial Times
+    homepage: https://www.ft.com
+    domains: [ft.com]
+    feeds:
+      - https://www.ft.com/war-in-ukraine?format=rss
+    gdelt: true
+    enabled: false
+    notes: Paywall. Needs QUOTEBASE_COOKIES_FT set to a logged-in cookie header.
+
+  - id: economist
+    name: The Economist
+    homepage: https://www.economist.com
+    domains: [economist.com]
+    feeds:
+      - https://www.economist.com/europe/rss.xml
+    url_include:
+      - '/\d{4}/\d{2}/\d{2}/'
+    gdelt: true
+    enabled: false
+    notes: Paywall. Needs QUOTEBASE_COOKIES_ECONOMIST.
+
+  - id: bloomberg
+    name: Bloomberg
+    homepage: https://www.bloomberg.com
+    domains: [bloomberg.com]
+    news_sitemaps:
+      - https://www.bloomberg.com/feeds/sitemap_news.xml
+    url_include:
+      - '/news/articles/'
+    gdelt: true
+    enabled: false
+    notes: Paywall and bot protection. Needs QUOTEBASE_COOKIES_BLOOMBERG and the browser fallback.
