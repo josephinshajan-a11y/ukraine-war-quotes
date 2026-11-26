@@ -21,9 +21,9 @@ sources.yaml ──> discovery ──> topic filter ──> fetch ──> clean 
                                                            section leads)
 ```
 
-1. **Discovery.** Every source in `config/sources.yaml` is checked the same way every day: its RSS feeds, its Google News sitemap and a GDELT query for its domain over the last 3 days. The lookback overlaps so a missed day is caught by the next run. URLs are normalised (tracking parameters removed) and filtered by each source's include/exclude patterns (live blogs, video pages and sport are excluded).
+1. **Discovery.** Every source in `config/sources.yaml` is checked the same way every day: its RSS feeds and its Google News sitemap over the last 3 days. When a source blocks its own listings (Reuters returns HTTP 401 to scripts), the Internet Archive's capture index for the source's URL prefixes is used, then GDELT. The lookback overlaps so a missed day is caught by the next run. URLs are normalised (tracking parameters removed) and filtered by each source's include/exclude patterns (live blogs, video pages and sport are excluded).
 2. **Topic filter.** A link is kept if its headline, summary or URL matches a term in `config/topic.yaml` (Ukraine, Kyiv, Kremlin, Zelensky, sanctions, ceasefire and so on) and no exclude rule (football, weather and so on). After download, the headline and body together must contain at least 3 topic terms. These rules decide what is read; the model does not.
-3. **Fetch.** Direct request with retries and per-host delays. If the publisher blocks it, the Internet Archive copy is tried, then a headless browser if enabled. How each page was obtained is stored in `articles.fetched_via`. The raw HTML is saved under `data/raw/` by its SHA-256.
+3. **Fetch.** Direct request with retries and per-host delays. If the publisher blocks it, the Internet Archive copy is tried, then a reader service that fetches the page on its own servers (r.jina.ai), then a headless browser if enabled. How each page was obtained is stored in `articles.fetched_via`. The raw HTML is saved under `data/raw/` by its SHA-256.
 4. **Clean text.** trafilatura pulls the article body. Paragraphs, list items and subheadings keep their structure. Captions, bylines, "sign up" prompts, "Reporting by ... Editing by ..." lines and similar are removed by generic and per-source rules.
 5. **Passage proposal.** The model reads the article (long ones are split into overlapping parts) and returns passages it thinks matter, each with a section, speaker and a short reason.
 6. **Verification.** A passage is saved only if all checks pass. Rejected passages are kept in `rejected_quotes` with the reasons.
@@ -95,10 +95,23 @@ git clone <this repo>
 cd ukraine-war-quotes
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dashboard,dev]"
-cp .env.example .env          # add ANTHROPIC_API_KEY
+cp .env.example .env          # add your model API key (see Model API below)
 quotebase init
 quotebase check-sources       # confirms every feed and sitemap answers
 ```
+
+### Model API
+
+The model is called through one of two clients: Anthropic's API, or any OpenAI-compatible API. Settings go in `.env`.
+
+| Option | Cost | Notes |
+|---|---|---|
+| Groq (default in `.env.example`) | Free tier, no card | `openai/gpt-oss-120b`, `qwen/qwen3.8-27b` and `openai/gpt-oss-20b` each have their own daily allowance (about 200K tokens). List them comma-separated and the client moves to the next one when a model's daily limit is reached. |
+| Gemini API | Free tier | 20 requests a day on Flash at the time of writing, enough for tests only. |
+| Ollama on your own machine | Free, offline | `QUOTEBASE_LLM_BASE_URL=http://localhost:11434/v1` |
+| Anthropic | Paid | `QUOTEBASE_LLM_PROVIDER=anthropic` |
+
+Free tiers have small per-minute token limits, so `.env.example` sends articles in 9,000-character chunks, sends only the paragraphs that mention the war plus their neighbours (`QUOTEBASE_TRIM_TO_TOPIC=1`; quotes are still checked against the full text), and spaces calls 30 seconds apart. When every model has used its daily allowance the run stops and the remaining articles are picked up by the next run.
 
 First full load (1 October 2026 to today):
 
@@ -138,7 +151,7 @@ Tabs:
 
 ## Scheduling
 
-`.github/workflows/daily.yml` runs `quotebase daily` at 05:17 UTC, runs the tests and `verify-db`, then commits the database, exports, digest and logs back to the repository, so every change to the data has a commit. Add `ANTHROPIC_API_KEY` under Settings > Secrets > Actions. The same workflow can be started by hand for a backfill or to add a source.
+`.github/workflows/daily.yml` runs `quotebase daily` at 05:17 UTC, runs the tests and `verify-db`, then commits the database, exports, digest and logs back to the repository, so every change to the data has a commit. Add your Groq key under Settings > Secrets and variables > Actions as `QUOTEBASE_LLM_API_KEY`. After the daily run, the job uses what is left of the free model allowance to keep filling in the history from 1 October, and stops by itself at the limit. The same workflow can be started by hand for a backfill or to add a source.
 
 To run on your own machine instead:
 
@@ -204,6 +217,9 @@ tests/
 ```
 
 ## Known limits
+
+- With a free model tier the first load from 1 October takes several days: about 150 to 250 relevant articles can be processed per day. The daily GitHub job continues the load each day until it is complete.
+- Reuters blocks scripts on its own site. Its articles are found through the Internet Archive index or GDELT and read through the Internet Archive or the reader service. Both of those services rate-limit busy clients, so some Reuters days may need a second run.
 
 - Coverage depends on what the feeds, sitemaps and GDELT list. An article missing from all three will be missed. `quotebase stats` and the Articles tab show what was found and what was skipped, so gaps can be checked by hand.
 - If Reuters blocks the direct request and the Internet Archive has no copy yet, the article is retried on later runs, up to 3 attempts in all, and then left as `fetch_failed`.

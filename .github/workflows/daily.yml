@@ -6,13 +6,17 @@ on:
   workflow_dispatch:
     inputs:
       command:
-        description: "daily | backfill | add-source | digest"
+        description: "daily | backfill | digest | add-source"
         default: daily
       from:
         description: "backfill start (YYYY-MM-DD)"
         required: false
+        default: "2026-10-01"
       to:
-        description: "backfill end (YYYY-MM-DD)"
+        description: "backfill end (YYYY-MM-DD, empty = today)"
+        required: false
+      sources:
+        description: "backfill sources, space separated (empty = all)"
         required: false
       name:
         description: "add-source: name"
@@ -33,10 +37,23 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 340
     env:
-      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-      QUOTEBASE_COOKIES_FT: ${{ secrets.QUOTEBASE_COOKIES_FT }}
-      QUOTEBASE_COOKIES_ECONOMIST: ${{ secrets.QUOTEBASE_COOKIES_ECONOMIST }}
-      QUOTEBASE_COOKIES_BLOOMBERG: ${{ secrets.QUOTEBASE_COOKIES_BLOOMBERG }}
+      # Groq free tier through its OpenAI-compatible API. Add the key under
+      # Settings > Secrets and variables > Actions as QUOTEBASE_LLM_API_KEY.
+      QUOTEBASE_LLM_PROVIDER: openai
+      QUOTEBASE_LLM_BASE_URL: https://api.groq.com/openai/v1
+      QUOTEBASE_LLM_API_KEY: ${{ secrets.QUOTEBASE_LLM_API_KEY }}
+      QUOTEBASE_EXTRACT_MODEL: openai/gpt-oss-120b,qwen/qwen3.8-27b,openai/gpt-oss-20b
+      QUOTEBASE_DIGEST_MODEL: qwen/qwen3.8-27b,openai/gpt-oss-120b
+      QUOTEBASE_REASONING_EFFORT: low
+      QUOTEBASE_LLM_MAX_TOKENS: "3000"
+      QUOTEBASE_CHUNK_CHARS: "9000"
+      QUOTEBASE_DIGEST_BATCH: "30"
+      QUOTEBASE_DIGEST_REF_SAME: "10"
+      QUOTEBASE_DIGEST_REF_OTHER: "5"
+      QUOTEBASE_DIGEST_SUMMARY_QUOTES: "30"
+      QUOTEBASE_LLM_MIN_INTERVAL: "30"
+      QUOTEBASE_TRIM_TO_TOPIC: "1"
+      QUOTEBASE_TEMPERATURE: "0"
     steps:
       - uses: actions/checkout@v4
 
@@ -50,13 +67,29 @@ jobs:
       - run: python -m pytest -q
 
       - name: Run
+        env:
+          CMD: ${{ github.event.inputs.command || 'daily' }}
+          FROM: ${{ github.event.inputs.from || '2026-10-01' }}
+          TO: ${{ github.event.inputs.to }}
+          SOURCES: ${{ github.event.inputs.sources }}
+          NAME: ${{ github.event.inputs.name }}
+          URL: ${{ github.event.inputs.url }}
         run: |
-          CMD="${{ github.event.inputs.command || 'daily' }}"
+          SRC_ARGS=""
+          for s in $SOURCES; do SRC_ARGS="$SRC_ARGS --source $s"; done
+          TO_ARG=""
+          if [ -n "$TO" ]; then TO_ARG="--to $TO"; fi
           case "$CMD" in
-            daily)      quotebase daily ;;
+            daily)
+              quotebase daily --no-digest
+              # Use what is left of the free model allowance to keep filling
+              # in the history from 1 October. Stops by itself at the limit.
+              quotebase backfill --from 2026-10-01 --source reuters --source bbc || true
+              quotebase digest
+              ;;
+            backfill)   quotebase backfill --from "$FROM" $TO_ARG $SRC_ARGS && quotebase digest ;;
             digest)     quotebase digest ;;
-            backfill)   quotebase backfill --from "${{ github.event.inputs.from }}" ${{ github.event.inputs.to && format('--to {0}', github.event.inputs.to) || '' }} ;;
-            add-source) quotebase add-source --name "${{ github.event.inputs.name }}" --url "${{ github.event.inputs.url }}" ;;
+            add-source) quotebase add-source --name "$NAME" --url "$URL" ;;
             *) echo "unknown command $CMD"; exit 1 ;;
           esac
 
@@ -66,7 +99,10 @@ jobs:
       - name: Commit results
         if: always()
         run: |
-          sqlite3 data/quotes.db "PRAGMA wal_checkpoint(TRUNCATE);" || true
+          python - <<'EOF'
+          import sqlite3
+          c = sqlite3.connect("data/quotes.db"); c.execute("PRAGMA wal_checkpoint(TRUNCATE)"); c.close()
+          EOF
           git config user.name "quotebase-bot"
           git config user.email "quotebase-bot@users.noreply.github.com"
           git add data/quotes.db data/export digests logs config/sources.d

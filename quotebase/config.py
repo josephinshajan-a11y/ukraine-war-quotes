@@ -63,6 +63,9 @@ class Settings:
     respect_robots: bool = os.environ.get("QUOTEBASE_RESPECT_ROBOTS", "1") == "1"
     use_archive_fallback: bool = os.environ.get("QUOTEBASE_ARCHIVE_FALLBACK", "1") == "1"
     use_browser_fallback: bool = os.environ.get("QUOTEBASE_BROWSER_FALLBACK", "0") == "1"
+    # Reader service that fetches a page on its own servers and returns its HTML.
+    use_reader_fallback: bool = os.environ.get("QUOTEBASE_READER_FALLBACK", "1") == "1"
+    reader_url: str = os.environ.get("QUOTEBASE_READER_URL", "https://r.jina.ai/")
     # Daily runs look back this many days so a missed day is picked up next time.
     daily_lookback_days: int = int(os.environ.get("QUOTEBASE_DAILY_LOOKBACK", "3"))
 

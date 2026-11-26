@@ -81,9 +81,10 @@ class Fetcher:
         self._last_hit[host] = time.monotonic()
 
     def get(self, url: str, *, accept: str | None = None, retries: int = 3,
-            min_delay: float | None = None) -> FetchResult:
+            min_delay: float | None = None, extra_headers: dict | None = None) -> FetchResult:
         host = urlsplit(url).netloc
         headers = {"Accept": accept} if accept else {}
+        headers.update(extra_headers or {})
         cookie = _cookie_for(host)
         if cookie:
             headers["Cookie"] = cookie
@@ -158,6 +159,16 @@ class Fetcher:
                 errors.append("archive: blocked or empty")
             except FetchError as e:
                 errors.append(f"archive: {e.reason}")
+
+        if self.s.use_reader_fallback:
+            try:
+                res = self.get(self.s.reader_url + url, accept="text/html", retries=2,
+                               extra_headers={"X-Return-Format": "html"})
+                if res.ok and not looks_blocked(res.text):
+                    return FetchResult(url, url, res.status, res.text, f"reader:{self.s.reader_url}")
+                errors.append("reader: blocked or empty")
+            except FetchError as e:
+                errors.append(f"reader: {e.reason}")
 
         if self.s.use_browser_fallback:
             try:

@@ -11,3 +11,60 @@
 {"ts": "2026-11-26T00:01:11+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 11, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-60.xml: 46079 links"}
 {"ts": "2026-11-26T00:01:13+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 11, "msg": "bbc: 3753 candidates in window, 0 new"}
 {"ts": "2026-11-26T00:01:13+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 11, "msg": "3275 articles to process"}
+{"ts": "2026-11-26T00:08:50+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 12, "msg": "bbc sitemap-index: 10 links"}
+{"ts": "2026-11-26T00:08:53+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 12, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-49.xml: 49998 links"}
+{"ts": "2026-11-26T00:08:55+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 12, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-50.xml: 49999 links"}
+{"ts": "2026-11-26T00:08:56+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 12, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-51.xml: 49998 links"}
+{"ts": "2026-11-26T00:08:58+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 12, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-53.xml: 49999 links"}
+{"ts": "2026-11-26T00:08:59+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 12, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-54.xml: 50000 links"}
+{"ts": "2026-11-26T00:09:01+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 12, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-55.xml: 49999 links"}
+{"ts": "2026-11-26T00:09:03+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 12, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-56.xml: 49995 links"}
+{"ts": "2026-11-26T00:09:04+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 12, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-57.xml: 49994 links"}
+{"ts": "2026-11-26T00:09:06+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 12, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-59.xml: 50000 links"}
+{"ts": "2026-11-26T00:09:07+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 12, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-60.xml: 46082 links"}
+{"ts": "2026-11-26T00:09:10+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "bbc: 3756 candidates in window, 3 new"}
+{"ts": "2026-11-26T00:09:10+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "2995 articles to process"}
+{"ts": "2026-11-26T00:09:12+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/cr1ewpd95d21o: 6 quotes saved, 0 rejected (bbc)"}
+{"ts": "2026-11-26T00:09:42+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/cxnv4ye3rvd4o: 4 quotes saved, 2 rejected (bbc)"}
+{"ts": "2026-11-26T00:10:13+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo: 7 quotes saved, 1 rejected (bbc)"}
+{"ts": "2026-11-26T00:10:44+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/cmn0d33zz34zo: 8 quotes saved, 2 rejected (bbc)"}
+{"ts": "2026-11-26T00:11:15+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/ckn80j9jv3jxo: 6 quotes saved, 2 rejected (bbc)"}
+{"ts": "2026-11-26T00:15:07+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/c5gm3gnwl42eo: 4 quotes saved, 0 rejected (bbc)"}
+{"ts": "2026-11-26T00:16:15+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/c6jre3z03w4go: 2 quotes saved, 1 rejected (bbc)"}
+{"ts": "2026-11-26T00:16:46+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/cq39glwprknjo: 7 quotes saved, 1 rejected (bbc)"}
+{"ts": "2026-11-26T00:22:58+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo: 4 quotes saved, 1 rejected (bbc)"}
+{"ts": "2026-11-26T00:24:09+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/c5n4e74n8749o: 5 quotes saved, 2 rejected (bbc)"}
+{"ts": "2026-11-26T00:27:45+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/c60733mxm0x0o: 12 quotes saved, 1 rejected (bbc)"}
+{"ts": "2026-11-26T00:30:24+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/c60evn992jq8o: 3 quotes saved, 0 rejected (bbc)"}
+{"ts": "2026-11-26T00:32:26+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/cqp83nk673reo: 4 quotes saved, 1 rejected (bbc)"}
+{"ts": "2026-11-26T00:32:56+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/ckx27v6dpjz0o: 7 quotes saved, 0 rejected (bbc)"}
+{"ts": "2026-11-26T00:35:24+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o: 6 quotes saved, 0 rejected (bbc)"}
+{"ts": "2026-11-26T00:36:08+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/c30rk8x5g80qo: 5 quotes saved, 3 rejected (bbc)"}
+{"ts": "2026-11-26T00:41:29+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/crz9dgz28zwdo: 8 quotes saved, 0 rejected (bbc)"}
+{"ts": "2026-11-26T00:42:12+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/cq7825234lgmo: 4 quotes saved, 1 rejected (bbc)"}
+{"ts": "2026-11-26T00:44:43+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo: 7 quotes saved, 1 rejected (bbc)"}
+{"ts": "2026-11-26T00:48:52+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/c9n70gd320mpo: 2 quotes saved, 0 rejected (bbc)"}
+{"ts": "2026-11-26T00:51:42+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/c32l507ev4v4o: 6 quotes saved, 1 rejected (bbc)"}
+{"ts": "2026-11-26T00:53:42+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/cq20xg80ly47o: 3 quotes saved, 0 rejected (bbc)"}
+{"ts": "2026-11-26T00:58:23+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/cm879dqn3e1jo: 4 quotes saved, 3 rejected (bbc)"}
+{"ts": "2026-11-26T01:00:55+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/c623j4ln97x7o: 4 quotes saved, 0 rejected (bbc)"}
+{"ts": "2026-11-26T01:01:57+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/c5n4em9mkkzeo: 11 quotes saved, 1 rejected (bbc)"}
+{"ts": "2026-11-26T01:03:08+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/ckzd9nln5e6go: 10 quotes saved, 1 rejected (bbc)"}
+{"ts": "2026-11-26T01:07:33+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o: 7 quotes saved, 2 rejected (bbc)"}
+{"ts": "2026-11-26T01:11:20+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro: 9 quotes saved, 1 rejected (bbc)"}
+{"ts": "2026-11-26T01:13:23+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/cxnv4zvmdy0jo: 2 quotes saved, 5 rejected (bbc)"}
+{"ts": "2026-11-26T01:14:38+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo: 7 quotes saved, 4 rejected (bbc)"}
+{"ts": "2026-11-26T01:19:24+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/cj752ddve27ko: 4 quotes saved, 2 rejected (bbc)"}
+{"ts": "2026-11-26T01:19:53+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/cqdr15l32d3go: 3 quotes saved, 3 rejected (bbc)"}
+{"ts": "2026-11-26T01:23:42+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/c3j4r2elrvj8o: 7 quotes saved, 0 rejected (bbc)"}
+{"ts": "2026-11-26T01:24:37+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo: 6 quotes saved, 0 rejected (bbc)"}
+{"ts": "2026-11-26T01:27:50+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/cmwy868v3nneo: 4 quotes saved, 0 rejected (bbc)"}
+{"ts": "2026-11-26T01:28:50+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/cmqj5qlj5yz9o: 5 quotes saved, 0 rejected (bbc)"}
+{"ts": "2026-11-26T01:29:21+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/ckpdw4d0z2dwo: 6 quotes saved, 2 rejected (bbc)"}
+{"ts": "2026-11-26T01:29:49+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 12, "msg": "model reply was not in the required format, asking again"}
+{"ts": "2026-11-26T01:30:51+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/cmx27g533zwyo: 8 quotes saved, 1 rejected (bbc)"}
+{"ts": "2026-11-26T01:31:34+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.com/news/articles/cmx27g533zwyo: 8 quotes saved, 1 rejected (bbc)"}
+{"ts": "2026-11-26T01:32:04+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/ck9q8xp5r5pgo: 6 quotes saved, 2 rejected (bbc)"}
+{"ts": "2026-11-26T01:32:38+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.com/news/articles/cq0l34e4kkr5o: 7 quotes saved, 0 rejected (bbc)"}
+{"ts": "2026-11-26T01:33:07+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "https://www.bbc.co.uk/news/articles/cq0l34e4kkr5o: 4 quotes saved, 1 rejected (bbc)"}
+{"ts": "2026-11-26T01:33:41+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 12, "msg": "backfill run 12 finished: {'discovered': 3, 'prefilter_pass': 3, 'processed': 42, 'quotes_saved': 242, 'quotes_rejected': 49, 'fetched': 2989, 'off_topic': 2888, 'out_of_range': 12, 'no_text': 31, 'not_relevant': 22}"}
