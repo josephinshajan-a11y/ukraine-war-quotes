@@ -30,6 +30,12 @@ def save_raw(html: str) -> str:
     return digest
 
 
+def opaque_url(url: str) -> bool:
+    """True when the last part of the URL carries no words, e.g. /news/articles/c4g1x2y7."""
+    last = url.rstrip("/").rsplit("/", 1)[-1]
+    return last.count("-") < 2
+
+
 def collect(conn, fetcher: Fetcher, sources: list[Source], start: date, end: date, mode: str,
             run_id: int, topic: TopicFilter, stats: Counter) -> None:
     for src in sources:
@@ -40,6 +46,10 @@ def collect(conn, fetcher: Fetcher, sources: list[Source], start: date, end: dat
         new = 0
         for c in cands:
             ok, why = topic.headline_match(c)
+            if not ok and not c.title and opaque_url(c.url):
+                # No headline and a URL made of an ID (BBC archive sitemaps):
+                # nothing to judge yet, so download it and apply the body rule.
+                ok, why = True, "no headline in listing; checked after download"
             created = db.insert_discovered(
                 conn, source_id=src.id, url=c.url, title=c.title, published_at=c.published_at,
                 summary=c.summary, via=c.via, status="pending" if ok else "skipped_prefilter", detail=why,
