@@ -1,0 +1,13 @@
+{"ts": "2026-11-26T00:00:55+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 11, "msg": "bbc sitemap-index: 10 links"}
+{"ts": "2026-11-26T00:00:57+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 11, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-49.xml: 49998 links"}
+{"ts": "2026-11-26T00:00:59+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 11, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-50.xml: 49999 links"}
+{"ts": "2026-11-26T00:01:01+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 11, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-51.xml: 49998 links"}
+{"ts": "2026-11-26T00:01:02+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 11, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-53.xml: 49999 links"}
+{"ts": "2026-11-26T00:01:04+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 11, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-54.xml: 50000 links"}
+{"ts": "2026-11-26T00:01:05+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 11, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-55.xml: 49999 links"}
+{"ts": "2026-11-26T00:01:07+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 11, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-56.xml: 49995 links"}
+{"ts": "2026-11-26T00:01:08+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 11, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-57.xml: 49994 links"}
+{"ts": "2026-11-26T00:01:10+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 11, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-59.xml: 50000 links"}
+{"ts": "2026-11-26T00:01:11+00:00", "level": "INFO", "logger": "quotebase.discovery", "run_id": 11, "msg": "bbc sitemap https://www.bbc.co.uk/sitemaps/https-sitemap-uk-archive-60.xml: 46079 links"}
+{"ts": "2026-11-26T00:01:13+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 11, "msg": "bbc: 3753 candidates in window, 0 new"}
+{"ts": "2026-11-26T00:01:13+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 11, "msg": "3275 articles to process"}

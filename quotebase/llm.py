@@ -127,6 +127,25 @@ def _plain_schema(node):
     return node
 
 
+def _salvage(generation):
+    """Arguments from a function call the server generated but rejected."""
+    if not generation:
+        return None
+    try:
+        data = json.loads(generation)
+    except (json.JSONDecodeError, TypeError):
+        return None
+    if isinstance(data, dict) and "arguments" in data:
+        args = data["arguments"]
+        if isinstance(args, str):
+            try:
+                args = json.loads(args)
+            except json.JSONDecodeError:
+                return None
+        return args if isinstance(args, dict) else None
+    return data if isinstance(data, dict) and ("quotes" in data or "hide" in data or "summary" in data) else None
+
+
 class OpenAICompatLLM:
     """Chat Completions API with a forced function call. Works with the
     Gemini API (free tier), Groq, a local Ollama server, or OpenAI itself."""
@@ -159,7 +178,7 @@ class OpenAICompatLLM:
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
             "tools": [{"type": "function", "function": {
                 "name": tool_name, "description": "Return the result in this structure.",
-                "parameters": _plain_schema(schema)}}],
+                "parameters": _plain_schema(schema) if "googleapis.com" in self.base_url else schema}}],
             "tool_choice": {"type": "function", "function": {"name": tool_name}},
         }
         temp = os.environ.get("QUOTEBASE_TEMPERATURE", "0")
@@ -173,6 +192,7 @@ class OpenAICompatLLM:
         if effort:
             body["reasoning_effort"] = effort
         last = None
+        format_retry = False
         for attempt in range(8):
             self._pace()
             try:
@@ -199,6 +219,20 @@ class OpenAICompatLLM:
             if r.status_code == 400 and "reasoning" in r.text.lower() and "reasoning_effort" in body:
                 body.pop("reasoning_effort")
                 continue
+            if r.status_code == 400:
+                try:
+                    err = r.json().get("error", {})
+                except ValueError:
+                    err = {}
+                if err.get("code") == "tool_use_failed":
+                    salvaged = _salvage(err.get("failed_generation"))
+                    if salvaged is not None:
+                        _trace(self.model, tool_name, system, user, salvaged, "salvaged from tool_use_failed")
+                        return salvaged
+                if err.get("code") in ("tool_use_failed", "output_parse_failed") and not format_retry:
+                    format_retry = True
+                    log.warning("model reply was not in the required format, asking again")
+                    continue
             if r.status_code >= 400:
                 last = f"HTTP {r.status_code}: {r.text[:500]}"
                 break
