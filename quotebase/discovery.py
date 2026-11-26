@@ -270,9 +270,11 @@ def discover(fetcher: Fetcher, source: Source, start: date, end: date, *, mode: 
             log.warning("%s %s failed: %s", source.id, label, e.reason)
             return []
 
+    # Feeds only reach back a few days, but they are cheap and anything
+    # outside the window is dropped below, so backfill reads them too.
+    for f in source.feeds:
+        found += attempt(f"feed {f}", read_feed, fetcher, f)
     if mode == "daily":
-        for f in source.feeds:
-            found += attempt(f"feed {f}", read_feed, fetcher, f)
         for sm in source.news_sitemaps:
             found += attempt(f"news-sitemap {sm}", read_sitemap, fetcher, sm)
     elif mode == "backfill" and source.sitemap_index:
