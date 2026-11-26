@@ -40,7 +40,7 @@ st.markdown(
     """
 <style>
   #MainMenu, header [data-testid="stToolbar"], footer {visibility: hidden;}
-  .block-container {padding-top: 2rem; max-width: 1280px;}
+  .block-container {padding-top: 3.5rem; max-width: 1280px;}
   h1, h2, h3 {letter-spacing: -0.01em;}
   .qb-head {display:flex; justify-content:space-between; align-items:flex-end; gap:1rem; margin-bottom:.4rem;}
   .qb-title {font-size:1.9rem; font-weight:700; line-height:1.2;}
@@ -74,6 +74,25 @@ st.markdown(
   .qb-context {background:#181818; border:1px solid #262626; border-radius:12px; padding:1rem 1.1rem;
                line-height:1.6; color:#bdbdbd; white-space:pre-wrap;}
   @media (max-width: 900px) {.qb-kpis {grid-template-columns:repeat(2, minmax(0,1fr));}}
+  @media (max-width: 640px) {
+    .block-container {padding-left: .9rem; padding-right: .9rem; padding-top: 3rem;}
+    .qb-head {flex-direction: column; align-items: flex-start; gap: .6rem;}
+    .qb-title {font-size: 1.4rem;}
+    .qb-sub {font-size: .85rem;}
+    .qb-pill {white-space: normal; font-size: .78rem;}
+    .qb-kpis {gap: .5rem; margin: .9rem 0 1rem;}
+    .qb-kpi {padding: .65rem .75rem;}
+    .qb-kpi .v {font-size: 1.25rem;}
+    .qb-kpi .l {font-size: .72rem;}
+    .qb-kpi:last-child {grid-column: 1 / -1;}
+    .qb-section .t {font-size: 1.05rem;}
+    .qb-summary {font-size: .88rem;}
+    .qb-card {padding: .75rem .8rem;}
+    .qb-quote {font-size: .93rem;}
+    .qb-meta {font-size: .75rem;}
+    [data-baseweb="tab-list"] {overflow-x: auto; flex-wrap: nowrap;}
+    [data-baseweb="tab-list"] button {flex-shrink: 0;}
+  }
 </style>
 """,
     unsafe_allow_html=True,
