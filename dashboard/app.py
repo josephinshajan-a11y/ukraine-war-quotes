@@ -80,13 +80,14 @@ st.markdown(
 )
 
 
-@st.cache_resource
-def conn():
-    return db.connect()
-
-
 def q(sql: str, args=()) -> pd.DataFrame:
-    return pd.read_sql_query(sql, conn(), params=args)
+    # A fresh connection per query: Streamlit runs each session in its own
+    # thread, and a sqlite connection may only be used by the thread that made it.
+    c = db.connect()
+    try:
+        return pd.read_sql_query(sql, c, params=args)
+    finally:
+        c.close()
 
 
 def esc(s) -> str:
