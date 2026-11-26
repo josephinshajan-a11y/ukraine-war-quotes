@@ -173,3 +173,40 @@
 {"ts": "2026-11-26T12:05:24+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 14, "msg": "https://kyivindependent.com/solidarity-and-winter-top-eu-agenda-as-leaders-discuss-new-support-for-ukraine: 15 quotes saved, 0 rejected (kyiv-independent)"}
 {"ts": "2026-11-26T12:05:24+00:00", "level": "INFO", "logger": "quotebase.pipeline", "run_id": 14, "msg": "backfill run 14 finished: {'discovered': 32, 'prefilter_pass': 17, 'prefilter_skip': 15, 'fetched': 17, 'processed': 15, 'quotes_saved': 91, 'quotes_rejected': 18, 'not_relevant': 2}"}
 {"ts": "2026-11-26T12:16:02+00:00", "level": "WARNING", "logger": "quotebase.discovery", "run_id": 15, "msg": "reuters news-sitemap https://www.reuters.com/arc/outboundfeeds/news-sitemap/?outputType=xml failed: HTTP 401"}
+{"ts": "2026-11-26T12:17:42+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 1)"}
+{"ts": "2026-11-26T12:18:42+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 1)"}
+{"ts": "2026-11-26T12:19:42+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 1)"}
+{"ts": "2026-11-26T12:20:12+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 2)"}
+{"ts": "2026-11-26T12:22:12+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 1)"}
+{"ts": "2026-11-26T12:22:42+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 2)"}
+{"ts": "2026-11-26T12:24:12+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 1)"}
+{"ts": "2026-11-26T12:24:42+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 2)"}
+{"ts": "2026-11-26T12:25:43+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 3)"}
+{"ts": "2026-11-26T12:27:13+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 4)"}
+{"ts": "2026-11-26T12:29:13+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 5)"}
+{"ts": "2026-11-26T12:31:43+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 6)"}
+{"ts": "2026-11-26T12:34:43+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 7)"}
+{"ts": "2026-11-26T12:37:43+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 8)"}
+{"ts": "2026-11-26T12:40:43+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 1)"}
+{"ts": "2026-11-26T12:41:13+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 2)"}
+{"ts": "2026-11-26T12:42:13+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 3)"}
+{"ts": "2026-11-26T12:43:43+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 4)"}
+{"ts": "2026-11-26T12:46:44+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 1)"}
+{"ts": "2026-11-26T12:47:14+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 2)"}
+{"ts": "2026-11-26T12:48:14+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 3)"}
+{"ts": "2026-11-26T12:49:44+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 4)"}
+{"ts": "2026-11-26T12:52:14+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 1)"}
+{"ts": "2026-11-26T12:53:44+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 1)"}
+{"ts": "2026-11-26T12:54:14+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 2)"}
+{"ts": "2026-11-26T12:55:44+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 1)"}
+{"ts": "2026-11-26T12:56:44+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 1)"}
+{"ts": "2026-11-26T12:57:14+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 2)"}
+{"ts": "2026-11-26T12:58:15+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 3)"}
+{"ts": "2026-11-26T13:00:15+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 1)"}
+{"ts": "2026-11-26T13:00:45+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 2)"}
+{"ts": "2026-11-26T13:01:45+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 3)"}
+{"ts": "2026-11-26T13:04:15+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 1)"}
+{"ts": "2026-11-26T13:04:45+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 2)"}
+{"ts": "2026-11-26T13:07:15+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 1)"}
+{"ts": "2026-11-26T13:07:47+00:00", "level": "WARNING", "logger": "quotebase.llm", "run_id": 16, "msg": "model call got 429, waiting (attempt 2)"}
+{"ts": "2026-11-26T13:09:50+00:00", "level": "INFO", "logger": "quotebase.digest", "run_id": 16, "msg": "digest written to /home/runner/work/ukraine-war-quotes/ukraine-war-quotes/digests/digest_2026-11-26.md ({'quotes_shown': 297, 'hidden': 23, 'errors': 1})"}

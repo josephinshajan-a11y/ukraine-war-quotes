@@ -1,7 +1,7 @@
 {
   "period_start": "2026-11-13",
   "period_end": "2026-11-26",
-  "generated_at": "2026-11-26T11:36:24+00:00",
+  "generated_at": "2026-11-26T13:09:50+00:00",
   "model": "qwen/qwen3.8-27b",
   "shown": {
     "war_intensity": [
@@ -12,11 +12,14 @@
       "Q7CF35E6808E1",
       "QE1C1DD67D360",
       "Q64B5E99CCCAA",
+      "Q49DDADDA40D9",
       "Q6E55F6E3B989",
       "Q728DE4A4449A",
       "Q74C502442F5F",
       "QACE7329A93B5",
       "Q05A1955439B6",
+      "QB9816D265D04",
+      "QF99B8E5B49B3",
       "Q056DC008C225",
       "Q60FD44F95D7A",
       "QC99BCDFEF5DA",
@@ -53,11 +56,38 @@
       "QAE86D202B926",
       "Q3D7C35661439",
       "Q87676C7111D3",
-      "Q9F21E9356110"
+      "Q9F21E9356110",
+      "Q0CF7A64E1371",
+      "Q2FC2DC33C6B8",
+      "Q8C4AB021371E",
+      "QE7E6811CF625",
+      "Q9DAEB7D1D654",
+      "QD3A102AE08B3",
+      "Q3A5626CB7024",
+      "Q576DBBA1DDD1",
+      "QE375DE6BDEFC",
+      "QFD951CE19E0A",
+      "Q95D04228D561",
+      "Q36F535B6E9C4",
+      "Q057F16A9D9EF",
+      "Q6F5DC7413DD6",
+      "Q7783098F7C65",
+      "Q7DDC6FABE359",
+      "Q4AE45D2116D4",
+      "Q63A70A5DAFD0",
+      "Q3BD070A9F45F",
+      "Q778FA9C27EB0",
+      "QBC486A824BEF",
+      "QBF34411B056E",
+      "QCF49E5AD05BC",
+      "Q834BBE06E761",
+      "QB7999524EA14"
     ],
     "peace_initiatives": [
+      "Q1BC1FA5796FB",
       "Q363BDDEF3218",
       "Q9F0220A02787",
+      "Q2F9FF1D56B57",
       "Q4D3F34CFBC9A",
       "Q660DC81D5BD4",
       "Q6844639821D3",
@@ -82,7 +112,10 @@
       "Q9835AF156BED",
       "QC170C63A5A83",
       "QE00D0B2628C9",
-      "QBDDDB646F936"
+      "QBDDDB646F936",
+      "Q5934D578BEF6",
+      "QBB6DBE90EDB1",
+      "QFBF9098D817A"
     ],
     "international_support": [
       "Q590C3FAB7B31",
@@ -100,12 +133,46 @@
       "Q8062CE95AE91",
       "Q63699EDFC4BB",
       "QCF9688292379",
-      "Q84951BA12D2F"
+      "Q84951BA12D2F",
+      "QDB027AFAEBA0",
+      "Q8758A9C945E6",
+      "Q95312A954F3B",
+      "QA7E761E83C44",
+      "QB5BDDA0E5DE4",
+      "QBABB280A6879",
+      "Q11334882D6AC",
+      "Q4CCDA3DC0305",
+      "Q4EB4471D1215",
+      "Q513EF090CF79",
+      "Q5AAD6C6C0623",
+      "Q726BABAC13D1",
+      "Q9B5D9575C4E3",
+      "QA11E6317430B",
+      "QB30C9D3EB9DE",
+      "QC2F7E197F885"
     ],
     "sanctions": [
       "Q86729AD4A7CD",
       "QAA415A1C1712",
-      "QB2BEFD15A844"
+      "QB2BEFD15A844",
+      "QF6104924C73C",
+      "Q0DEFC63FB88D",
+      "Q26017377AE4A",
+      "QB72F247C50DB",
+      "QD6747310A777",
+      "Q1870BC266CA2",
+      "QCA2B8B24173B",
+      "Q6A597EC7C41A",
+      "Q6CDA55E25AEC",
+      "QA7C7C9A0D8CD",
+      "QD4FD9200C3B9",
+      "Q5DA6DF17E14D",
+      "Q5641692AF9D6",
+      "Q6AD2C6AF62DE",
+      "Q74EB80CA2AAF",
+      "Q975AF78A947E",
+      "QBEE0ECFC3CAB",
+      "QDAB39E8ED2EC"
     ],
     "resources": [
       "Q9634DAB2EA7E",
@@ -138,14 +205,45 @@
       "Q4D16A11D32A1",
       "Q55E5A409BC8D",
       "Q9EF1706A0417",
-      "QDF20FB48BE6F"
+      "QDF20FB48BE6F",
+      "QDF94A306BB4E",
+      "Q33584FCD84AA",
+      "Q65FD3E3D438A",
+      "QC11AB6AF6971",
+      "QDF309E1B2603",
+      "Q868BFCFFD90B",
+      "Q1CC7FF5B87C6",
+      "QD496FA01B50F",
+      "QAC4009E5E856",
+      "QC5CCEB254862",
+      "Q3C85F5FEF07D",
+      "Q8B86ED1E02E4",
+      "QBB495D35D050",
+      "QC86A02A88D61",
+      "Q0001486D7130",
+      "Q157AE5569572",
+      "QF5B1A4B03B37",
+      "QFD45894D3460",
+      "Q261F04B22312",
+      "Q2A689D904E04",
+      "Q423AD7637E8E",
+      "Q4DEA0ACA1F74",
+      "Q56C8385416D9",
+      "Q5C9F5E25161C",
+      "Q7980625550BA",
+      "Q8F8381CB4353"
     ],
     "energy_infrastructure": [
       "Q08A5DBEBC49F",
       "Q51FB86E57DC1",
       "QACBBE4017C3A",
       "QB1C32E6BDC9F",
-      "Q2968936C5735"
+      "Q2968936C5735",
+      "Q74F0D65B3A6B",
+      "QC153C0AFC4C5",
+      "QC7557DCBB06F",
+      "Q233CA4786C56",
+      "Q67BB4B7A1691"
     ],
     "escalation_risks": [
       "Q3ACDD017666B",
@@ -164,6 +262,7 @@
       "Q5AABDC621FF3",
       "QC837C55E6DD6",
       "Q39DDD650C164",
+      "Q065888D53279",
       "Q3E592105F68C",
       "Q656BA4ADBE0C",
       "QB25FE8728D1F",
@@ -190,7 +289,11 @@
       "Q780B16DF1ED1",
       "QA75C7B704CE5",
       "QBE903E549079",
-      "QCC00981899A8"
+      "QCC00981899A8",
+      "QBFB8E48C80F8",
+      "QD105B322E2B4",
+      "QD8924F33DB42",
+      "QF59E506F7FCF"
     ],
     "domestic_politics": [
       "QE6E30FA58209",
@@ -208,7 +311,11 @@
       "Q54A01D0E3165",
       "Q802F32428088",
       "Q9044D3B6B178",
-      "Q9DBC918C7E44"
+      "Q9DBC918C7E44",
+      "Q54C7C0664467",
+      "Q0092C1E3ED4E",
+      "QBD10C88AE9B5",
+      "Q260FE3821B65"
     ]
   },
   "hidden": [
@@ -269,45 +376,52 @@
       "decided_by": "rule"
     },
     {
-      "id": "Q49DDADDA40D9",
-      "type": "superseded",
-      "by": "Q05A1955439B6",
-      "reason": "The 2,049-drone count for 11-16 is superseded by the 11-17 report of 2,256 drones downed, which is the newer and larger figure in the same escalating sequence.",
-      "decided_by": "qwen/qwen3.8-27b"
+      "id": "Q4D18A76128A1",
+      "type": "duplicate",
+      "by": "Q3A5626CB7024",
+      "reason": "identical text already shown",
+      "decided_by": "rule"
     },
     {
-      "id": "QB9816D265D04",
-      "type": "superseded",
-      "by": "Q402DB00754DD",
-      "reason": "The 11-17 quote about Zelensky describing the seven-stage operation is superseded by the later, more detailed confirmation that includes the bridge collapse outcome.",
-      "decided_by": "qwen/qwen3.8-27b"
+      "id": "QBA93AF6DABC3",
+      "type": "duplicate",
+      "by": "Q26017377AE4A",
+      "reason": "identical text already shown",
+      "decided_by": "rule"
     },
     {
-      "id": "QF99B8E5B49B3",
-      "type": "superseded",
-      "by": "Q402DB00754DD",
-      "reason": "The 11-17 quote about several drone types and Flamingo/Neptune missiles is superseded by the later, more complete confirmation of the same attack details.",
-      "decided_by": "qwen/qwen3.8-27b"
+      "id": "QDEEDAC958DFF",
+      "type": "duplicate",
+      "by": "QA0BC262AA341",
+      "reason": "identical text already shown",
+      "decided_by": "rule"
+    },
+    {
+      "id": "QFB8E47FA5EE7",
+      "type": "duplicate",
+      "by": "Q868BFCFFD90B",
+      "reason": "identical text already shown",
+      "decided_by": "rule"
     },
     {
       "id": "QE6DF474FB727",
       "type": "duplicate",
       "by": "Q8E5D268725B7",
-      "reason": "The 11-18 quote repeating that Ukraine cleared 15km of pipeline in seven months is a duplicate of the more complete quote that also names the operation and its start date.",
+      "reason": "Same fact (seven months to clear 15km of pipeline) already stated with the operation name and start date in Q8E5D268725B7.",
       "decided_by": "qwen/qwen3.8-27b"
     },
     {
       "id": "Q5F98D96C40FE",
       "type": "superseded",
       "by": "QF6E7B3D7FC16",
-      "reason": "The later quote updates the Friday kill count from at least eight to at least nine and adds the full missile/drone tally (110 missiles, 400+ drones).",
+      "reason": "The later quote updates the Friday kill count from at least eight to at least nine and adds the missile/drone totals (110 missiles, 400+ drones) and Zelensky's 'biggest this year' characterization.",
       "decided_by": "qwen/qwen3.8-27b"
     },
     {
       "id": "QDAC2EDBCD2F6",
       "type": "superseded",
       "by": "QF6E7B3D7FC16",
-      "reason": "The later quote updates the Friday kill count from nine to at least nine and adds the full missile/drone tally, making this earlier partial count redundant.",
+      "reason": "The later quote updates the Friday kill count from nine to at least nine and adds the full strike volume (110 missiles, 400+ drones), making this earlier partial tally redundant.",
       "decided_by": "qwen/qwen3.8-27b"
     },
     {
@@ -321,62 +435,64 @@
       "id": "QAC97204F3F01",
       "type": "duplicate",
       "by": "QA6961819BB3E",
-      "reason": "The later quote reports the same destruction of the Crimean Bridge's central road section with additional detail (one of two support arches collapsed into the sea).",
+      "reason": "The later quote reports the same destruction of the Crimean Bridge's central road section with additional detail (one of two support arches collapsed into the sea), making the earlier version redundant.",
       "decided_by": "qwen/qwen3.8-27b"
     },
     {
-      "id": "Q1BC1FA5796FB",
-      "type": "superseded",
-      "by": "Q8707B3C05AD8",
-      "reason": "The later quote gives the specific POW exchange figure (1,000–1,500) that the earlier quote said was still unknown.",
-      "decided_by": "qwen/qwen3.8-27b"
-    },
-    {
-      "id": "Q2F9FF1D56B57",
+      "id": "Q36CB61A16587",
       "type": "duplicate",
-      "by": "Q6F26D55EE00F",
-      "reason": "The later Peskov quote repeats the same conditional stance on European participation in the peace process.",
+      "by": "QE375DE6BDEFC",
+      "reason": "Same 8 a.m. drone count (87 downed/suppressed, 52 jet-powered) already reported in the earlier quote.",
       "decided_by": "qwen/qwen3.8-27b"
     },
     {
       "id": "QD443529602D2",
       "type": "duplicate",
       "by": "QF60AFB252BAE",
-      "reason": "The later quote (Nov 14) reports the same fact—Russia occupies roughly a fifth of Ukrainian territory including most of the Donbas—with no new information, making the Nov 13 quote a duplicate.",
+      "reason": "The later quote (Nov 14) reports the same fact—Russia occupies roughly a fifth of Ukrainian territory including most of the Donbas—with no new information added.",
+      "decided_by": "qwen/qwen3.8-27b"
+    },
+    {
+      "id": "QA0BC262AA341",
+      "type": "superseded",
+      "by": "Q4DEA0ACA1F74",
+      "reason": "The later quote gives a specific figure (14,000 troops) replacing the vague 'thousands' in the earlier quote.",
+      "decided_by": "qwen/qwen3.8-27b"
+    },
+    {
+      "id": "Q5FEBDABCB857",
+      "type": "superseded",
+      "by": "Q74F0D65B3A6B",
+      "reason": "Preliminary monitoring-channel report of the same strike is superseded by the local official's confirmation with specific details (air raid alert, drone debris, fire).",
       "decided_by": "qwen/qwen3.8-27b"
     },
     {
       "id": "Q6F22CB038DE7",
       "type": "duplicate",
       "by": "QC837C55E6DD6",
-      "reason": "Same Putin quote about the Crimean Bridge retaliation, with QC837C55E6DD6 providing additional context (location in Shenzhen, specific description of the strike).",
-      "decided_by": "qwen/qwen3.8-27b"
-    },
-    {
-      "id": "Q065888D53279",
-      "type": "duplicate",
-      "by": "Q39DDD650C164",
-      "reason": "Same Polish airspace incursion event; Q39DDD650C164 (Tusk) is the more prominent statement and Q065888D53279 (Kosiniak-Kamysz) adds only the NATO support detail, but the core 'provocation' framing is the same.",
+      "reason": "Same Putin vow of 'more painful' retaliation for the Crimean Bridge strike, with no additional information beyond what the other quote already states.",
       "decided_by": "qwen/qwen3.8-27b"
     },
     {
       "id": "QF068095F0804",
-      "type": "superseded",
+      "type": "duplicate",
       "by": "QCC00981899A8",
-      "reason": "The Leipzig-Halle drone attack is re-reported with the same facts (August, drone attack, Germany blaming Russia) in the later quote, which also adds the Estonia drone-factory arson incident.",
+      "reason": "The Leipzig-Halle drone attack is reported in more complete context in QCC00981899A8, which pairs it with the Estonia drone factory arson in a single summary.",
       "decided_by": "qwen/qwen3.8-27b"
     }
   ],
   "summaries": {
-    "war_intensity": "The war is intensifying on both sides, with Russia launching what Zelensky called its biggest attack of the year, 110 missiles and over 400 drones, while Ukraine's strike rate has more than doubled, culminating in the destruction of the Crimean Bridge's road section.",
-    "peace_initiatives": "US and European officials express growing optimism that talks are taking shape, with a six-nation European team set to join negotiations and Kushner declaring \"peace is achievable.\" However, core disagreements persist, with Russia's maximalist demands and continued infrastructure strikes casting doubt on whether a deal is near.",
-    "international_support": "Allies are reinforcing their commitment to Ukraine with new funding packages and rhetoric of determination, though doubts persist over the scale of European funding and the risk of a US–Russia deal sidelining Kyiv.",
-    "sanctions": "Economic pressure on Russia is intensifying, with the UK sanctioning the country's ten major oil producers and strikes on refineries pushing global prices higher, while Putin himself acknowledges unprecedented sanctions pressure.",
-    "resources": "Russian manpower strain is growing, with the average age of those killed rising and recruitment expanding to Central Asian, North Korean, and African fighters, while Ukraine's deep-strike drone capability is expanding, hitting refineries, the Crimea bridge, and air defenses.",
-    "energy_infrastructure": "Russia is intensifying strikes on Ukraine's energy infrastructure as winter takes hold, with frequent blackouts and heating disruptions expected. A missile hit to the Crimean Bridge has damaged its arch, disrupting road traffic and potentially blocking the shipping channel.",
-    "escalation_risks": "The war is spilling over into NATO territory with growing frequency and severity, from Russian missiles landing in Poland to repeated airspace violations and sabotage attempts across Europe, while reports of a possible Russian nuclear-capable satellite launch raise the stakes further.",
-    "domestic_politics": "Growing elite discontent with Putin is evident in shifting attitudes among Russia's business class, though fear of retaliation keeps them from acting. The arrest of a regional governor, a first since the war began, and the absence of a clear successor signal increasing uncertainty around Putin's long-term hold on power."
+    "war_intensity": "Both sides are escalating deep-strike operations, with Russia launching massive missile and drone barrages on Kyiv and other cities while Ukraine hits oil refineries, military bases, and industrial targets hundreds of kilometers inside Russia. Daily Russian casualties remain in the thousands, and the conflict is expanding to new theaters including Africa.",
+    "peace_initiatives": "Peace talks are expanding in scope, with Europe organizing a unified negotiating position and the US actively mediating, but remain stalled on substance as Russia maintains maximalist demands and rejects ceasefire offers.",
+    "international_support": "European leaders are consolidating financial and military support for Ukraine through new loan packages and air defense projects, though internal friction over opt-outs and delayed US deliveries introduce uncertainty about the durability of that backing.",
+    "sanctions": "Sanctions pressure on Russia is intensifying, with the EU expanding its regime to new targets and activating countrywide measures, the UK sanctioning Russia's top oil producers, and Ukrainian drone strikes on refineries compounding the economic impact of existing price caps.",
+    "resources": "Ukrainian strikes on Russian refineries and export hubs have intensified, but Russia's oil export revenues have grown to exceed the full-year 2025 total by September. North Korea's military support to Russia, including 14,000 troops and ballistic missiles, has been temporarily suspended over a diplomatic dispute.",
+    "energy_infrastructure": "Russia is intensifying strikes on Ukraine's energy infrastructure ahead of winter, with capacity already below 40% of pre-war levels, while Ukraine continues hitting Russian refineries and oil transport facilities.",
+    "escalation_risks": "Officials and analysts describe a clear pattern of the war spilling beyond Ukraine's borders, with Russian missiles striking Polish airspace, sabotage plots across Europe, and a possible nuclear-capable satellite launch, while NATO leaders warn of further escalation.",
+    "domestic_politics": "Russia's first arrest of a regional governor since the war began and a noticeable shift in how oligarchs refer to Putin point to growing internal unease, though analysts stress no one will move against him while he is alive."
   },
   "verbatim_check": "passed",
-  "errors": []
+  "errors": [
+    "peace_initiatives review: HTTP 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01kvah4h6jfw8arvahjvwpbve4` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, Requested 1478. The request's expected output tokens exceed the enforced limit; reduce max_tokens (or the requ"
+  ]
 }

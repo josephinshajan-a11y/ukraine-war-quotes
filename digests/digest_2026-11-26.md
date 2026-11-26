@@ -1,24 +1,124 @@
 # Russia's war on Ukraine: media quotes, 13 November 2026 to 26 November 2026
 
-Period: 2026-11-13 to 2026-11-26 (last 14 days). Generated 2026-11-26 11:36 UTC.
-190 quotes from 1 sources (BBC News). 22 older quotes left out as superseded or repeated; see the JSON file with the same name for the reasons.
+Period: 2026-11-13 to 2026-11-26 (last 14 days). Generated 2026-11-26 13:09 UTC.
+297 quotes from 3 sources (Al Jazeera, BBC News, The Kyiv Independent). 23 older quotes left out as superseded or repeated; see the JSON file with the same name for the reasons.
 
 Quote text and source details are copied unchanged from the database. The short summary under each heading is written by a language model.
 
 ## Contents
 
-- [War Intensity and Battlefield](#war-intensity-and-battlefield) (49)
-- [Peace Initiatives and Negotiations](#peace-initiatives-and-negotiations) (27)
-- [International Support for Ukraine](#international-support-for-ukraine) (16)
-- [Sanctions and Economic Pressure on Russia](#sanctions-and-economic-pressure-on-russia) (3)
-- [Conflicting Parties' Resources](#conflicting-parties-resources) (31)
-- [Energy and Critical Infrastructure](#energy-and-critical-infrastructure) (5)
-- [Escalation Risks and Spillover](#escalation-risks-and-spillover) (43)
-- [Domestic Politics and Public Opinion](#domestic-politics-and-public-opinion) (16)
+- [War Intensity and Battlefield](#war-intensity-and-battlefield) (77)
+- [Peace Initiatives and Negotiations](#peace-initiatives-and-negotiations) (32)
+- [International Support for Ukraine](#international-support-for-ukraine) (32)
+- [Sanctions and Economic Pressure on Russia](#sanctions-and-economic-pressure-on-russia) (21)
+- [Conflicting Parties' Resources](#conflicting-parties-resources) (57)
+- [Energy and Critical Infrastructure](#energy-and-critical-infrastructure) (10)
+- [Escalation Risks and Spillover](#escalation-risks-and-spillover) (48)
+- [Domestic Politics and Public Opinion](#domestic-politics-and-public-opinion) (20)
 
 ## War Intensity and Battlefield
 
-**Summary (model-written):** The war is intensifying on both sides, with Russia launching what Zelensky called its biggest attack of the year, 110 missiles and over 400 drones, while Ukraine's strike rate has more than doubled, culminating in the destruction of the Crimean Bridge's road section.
+**Summary (model-written):** Both sides are escalating deep-strike operations, with Russia launching massive missile and drone barrages on Kyiv and other cities while Ukraine hits oil refineries, military bases, and industrial targets hundreds of kilometers inside Russia. Daily Russian casualties remain in the thousands, and the conflict is expanding to new theaters including Africa.
+
+> In total, Russia launched 812 strikes on 46 of the oblasts' settlements, using artillery, missiles, and various drone types for its attacks, authorities said.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [Russian attacks kill 10, injure 58 across Ukraine over past day, as ballistic missiles strike Kyiv](https://kyivindependent.com/russian-attacks-kill-10-injure-58-across-ukraine-over-past-day-strike-kyiv-with-ballistic-missiles) | ID: `QB7999524EA14`
+
+> Russian attacks killed ten people and injured 58 others, including three children, across Ukraine over the past day, as Russian ballistic missiles struck Kyiv, local authorities reported on Nov. 25-26.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [Russian attacks kill 10, injure 58 across Ukraine over past day, as ballistic missiles strike Kyiv](https://kyivindependent.com/russian-attacks-kill-10-injure-58-across-ukraine-over-past-day-strike-kyiv-with-ballistic-missiles) | ID: `Q834BBE06E761`
+
+> Al Jazeera’s Yulia Shapovalova, reporting from Moscow, said Russia “is putting pressure on Kyiv’s military infrastructure, straining its air defences, and everything that can support military supply chains”.
+
+Source: Al Jazeera | Published: 2026-11-26 | Speaker: Yulia Shapovalova | Article: [Ukraine drone attack kills five in Russian-occupied Zaporizhia](https://www.aljazeera.com/news/2026/11/26/ukraine-drone-attack-kills-five-in-russian-occupied-zaporizhia?traffic_source=rss) | ID: `QCF49E5AD05BC`
+
+> Earlier, Ukrainian forces hit a major Russian military base east of Moscow, damaging five aircraft used to launch missiles and bombs, according to the General Staff of the Armed Forces of Ukraine.
+
+Source: Al Jazeera | Published: 2026-11-26 | Article: [Ukraine drone attack kills five in Russian-occupied Zaporizhia](https://www.aljazeera.com/news/2026/11/26/ukraine-drone-attack-kills-five-in-russian-occupied-zaporizhia?traffic_source=rss) | ID: `QBF34411B056E`
+
+> “Following an enemy drone attack on a parking lot, five people were killed and three others wounded in the locality of Vesioloye,” Moscow-installed governor Yevgeny Balitsky wrote on Telegram on Thursday.
+
+Source: Al Jazeera | Published: 2026-11-26 | Speaker: Yevgeny Balitsky | Article: [Ukraine drone attack kills five in Russian-occupied Zaporizhia](https://www.aljazeera.com/news/2026/11/26/ukraine-drone-attack-kills-five-in-russian-occupied-zaporizhia?traffic_source=rss) | ID: `QBC486A824BEF`
+
+> Russia’s Defence Ministry said on Thursday its forces had carried out a massive overnight strike on Ukraine, hitting military-industrial facilities in Kyiv, the Interfax news agency reported.
+
+Source: Al Jazeera | Published: 2026-11-26 | Article: [Ukraine drone attack kills five in Russian-occupied Zaporizhia](https://www.aljazeera.com/news/2026/11/26/ukraine-drone-attack-kills-five-in-russian-occupied-zaporizhia?traffic_source=rss) | ID: `Q778FA9C27EB0`
+
+> The Ukrainian capital, Kyiv, was targeted with ballistic missiles late on Wednesday, striking a shopping centre and two other buildings on the east side of the Dnipro River bisecting the city, with warnings for residents to remain in shelters still in place, Mayor Vitali Klitschko said.
+
+Source: Al Jazeera | Published: 2026-11-26 | Speaker: Vitali Klitschko | Article: [Ukraine drone attack kills five in Russian-occupied Zaporizhia](https://www.aljazeera.com/news/2026/11/26/ukraine-drone-attack-kills-five-in-russian-occupied-zaporizhia?traffic_source=rss) | ID: `Q3BD070A9F45F`
+
+> Russia has lost 1,645,899 troops in Ukraine since the beginning of its full-scale invasion on Feb. 24, 2022, the General Staff of the Armed Forces of Ukraine reported on Nov. 26.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: General Staff of the Armed Forces of Ukraine | Article: [General Staff: Russia has lost 1,645,899 troops in Ukraine since Feb. 24, 2022](https://kyivindependent.com/general-staff-russia-has-lost-1-645-899-troops-in-ukraine-since-feb-24-2022) | ID: `Q63A70A5DAFD0`
+
+> The number includes 2,319 casualties that Russian forces suffered over the past day.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [General Staff: Russia has lost 1,645,899 troops in Ukraine since Feb. 24, 2022](https://kyivindependent.com/general-staff-russia-has-lost-1-645-899-troops-in-ukraine-since-feb-24-2022) | ID: `Q4AE45D2116D4`
+
+> Residents reported over 30 explosions in the industrial zone during the attack, according to Astra.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [Ukrainian drones attack key Russian fertilizer plant linked to explosives production, Stavropol Krai governor says](https://kyivindependent.com/ukrainian-drones-attack-key-russian-fertilizer-plant-linked-to-explosives-production-in-stavropol-krai-local-official-says) | ID: `Q7DDC6FABE359`
+
+> Ukrainian drones targeted an industrial zone housing a major fertilizer factory that produces components for Russian weapons in an overnight attack on Nov. 26, Stavropol Krai Governor Vladimir Vladimirov reported on Telegram.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Vladimir Vladimirov | Article: [Ukrainian drones attack key Russian fertilizer plant linked to explosives production, Stavropol Krai governor says](https://kyivindependent.com/ukrainian-drones-attack-key-russian-fertilizer-plant-linked-to-explosives-production-in-stavropol-krai-local-official-says) | ID: `Q7783098F7C65`
+
+> Vladimorov said "the industrial zone of Nevinnomyssk" came under a "massive drone attack" overnight that was partially repelled by Russian air defenses.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Vladimir Vladimirov | Article: [Ukrainian drones attack key Russian fertilizer plant linked to explosives production, Stavropol Krai governor says](https://kyivindependent.com/ukrainian-drones-attack-key-russian-fertilizer-plant-linked-to-explosives-production-in-stavropol-krai-local-official-says) | ID: `Q6F5DC7413DD6`
+
+> The governor also claimed that a school building and part of a university were hit in the strike, and that two people had been injured.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Vladimir Vladimirov | Article: [Ukrainian drones attack key Russian fertilizer plant linked to explosives production, Stavropol Krai governor says](https://kyivindependent.com/ukrainian-drones-attack-key-russian-fertilizer-plant-linked-to-explosives-production-in-stavropol-krai-local-official-says) | ID: `Q057F16A9D9EF`
+
+> The demand follows a report from Kyiv published Nov. 17 that documented 14,000 cases of Russian forces deploying such weapons against Ukrainian soldiers on the front lines.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [Over 30 countries demand Russia stop using chemical agents as weapons of war in Ukraine](https://kyivindependent.com/over-30-countries-demand-russia-stop-using-chemical-agents-as-weapons-of-war-in-ukraine) | ID: `Q36F535B6E9C4`
+
+> Late on Nov. 23, Russia struck a Zaporizhzhia residential building in an attack that killed at least two people and injured 48 others, officials reported.
+
+Source: The Kyiv Independent | Published: 2026-11-25 | Article: [No good news from US on accelerating air defense missile deliveries, Zelensky says](https://kyivindependent.com/no-good-news-from-us-on-accelerating-air-defense-missile-deliveries-zelensky-says) | ID: `Q95D04228D561`
+
+> The attack injured seven people, the Kyiv City Military Administration reported the morning after the strike. Three of the victims have been hospitalized, with two in serious condition, according to Kyiv City Mayor Vitali Klitschko.
+
+Source: The Kyiv Independent | Published: 2026-11-25 | Speaker: Vitali Klitschko | Article: [Russia slams Kyiv in ballistic missile attack, hits shopping center, injures 7](https://kyivindependent.com/russia-slams-kyiv-in-ballistic-missile-attack-hits-shopping-center) | ID: `QFD951CE19E0A`
+
+> Russia launched an unspecified number of ballistic missiles, as well as 113 drones, 76 of them jet-powered, at Ukraine overnight, Ukraine's Air Force reported. As of 8 a.m. local time, air defenses shot down or suppressed 87 drones, 52 of them jet-powered, the Air Force said.
+
+Source: The Kyiv Independent | Published: 2026-11-25 | Article: [Russia slams Kyiv in ballistic missile attack, hits shopping center, injures 7](https://kyivindependent.com/russia-slams-kyiv-in-ballistic-missile-attack-hits-shopping-center) | ID: `QE375DE6BDEFC`
+
+> Russia struck at 20 locations and debris from downed aerial targets fell at six other locations, the Air Force added.
+
+Source: The Kyiv Independent | Published: 2026-11-25 | Article: [Russia slams Kyiv in ballistic missile attack, hits shopping center, injures 7](https://kyivindependent.com/russia-slams-kyiv-in-ballistic-missile-attack-hits-shopping-center) | ID: `Q576DBBA1DDD1`
+
+> In August, Ukraine's President Volodymyr Zelensky accused Moscow of using North Korean missiles.
+
+Source: BBC News | Published: 2026-11-25 | Speaker: Volodymyr Zelensky | Article: [North Korea expels Swiss diplomat in sanctions row](https://www.bbc.co.uk/news/articles/cq0l34e4kkr5o) | ID: `Q3A5626CB7024`
+
+> A Ukrainian air defense laser has successfully intercepted a Russian jet-powered Geran drone for the first time in combat conditions, presidential adviser Serhii "Flash" Beskrestnov said on Nov. 25.
+
+Source: The Kyiv Independent | Published: 2026-11-25 | Speaker: Serhii "Flash" Beskrestnov | Article: [Ukraine war latest: Poland plans no-fly zone near Ukraine border, asks NATO to intercept Russian missiles over Ukraine](https://kyivindependent.com/ukraine-war-latest-poland-plans-no-fly-zone-near-ukraine-border-asks-nato-to-intercept-russian-missiles-over-ukraine) | ID: `QD3A102AE08B3`
+
+> "It is still too early to talk about serial production of the laser. Tests are underway, during which lasers protect critical infrastructure facilities," he added.
+
+Source: The Kyiv Independent | Published: 2026-11-25 | Speaker: Serhii "Flash" Beskrestnov | Article: [Ukraine war latest: Poland plans no-fly zone near Ukraine border, asks NATO to intercept Russian missiles over Ukraine](https://kyivindependent.com/ukraine-war-latest-poland-plans-no-fly-zone-near-ukraine-border-asks-nato-to-intercept-russian-missiles-over-ukraine) | ID: `Q9DAEB7D1D654`
+
+> Samara region governor Vyacheslav Fedorishchev said the night-time attacks had been "a true ordeal", with more than 145 drones shot down. One person was killed and several towns experienced power outages, Fedorishchev said.
+
+Source: BBC News | Published: 2026-11-25 | Speaker: Vyacheslav Fedorishchev | Article: [Five Russian military jets hit in airfield strike, says Ukraine](https://www.bbc.co.uk/news/articles/ck9q8xp5r5pgo) | ID: `QE7E6811CF625`
+
+> "Did you repair them? We'll hit them again," the defence ministry in Kyiv said.
+
+Source: BBC News | Published: 2026-11-25 | Speaker: Kyiv defence ministry | Article: [Five Russian military jets hit in airfield strike, says Ukraine](https://www.bbc.co.uk/news/articles/ck9q8xp5r5pgo) | ID: `Q8C4AB021371E`
+
+> Overnight, Kyiv also said it hit two oil refineries in Russia's Samara region some 800km (500 miles) from the front line – the latest in a series of long-range strikes which have dented Moscow's oil processing capacity.
+
+Source: BBC News | Published: 2026-11-25 | Article: [Five Russian military jets hit in airfield strike, says Ukraine](https://www.bbc.co.uk/news/articles/ck9q8xp5r5pgo) | ID: `Q2FC2DC33C6B8`
+
+> Three MiG-31 and two Su-34s aircraft were hit, Kyiv's General Staff said, adding that the extent of the damage was still being assessed but that "there may be even better news to come".
+
+Source: BBC News | Published: 2026-11-25 | Speaker: Kyiv's General Staff | Article: [Five Russian military jets hit in airfield strike, says Ukraine](https://www.bbc.co.uk/news/articles/ck9q8xp5r5pgo) | ID: `Q0CF7A64E1371`
 
 > Some 20,000 Russian soldiers died fighting for control of 10 Ukrainian villages whose combined pre-war population was 12,000.
 
@@ -168,6 +268,14 @@ Source: BBC News | Published: 2026-11-17 | Article: [Komyshuvakha: Ukraine accus
 
 Source: BBC News | Published: 2026-11-17 | Article: [Komyshuvakha: Ukraine accuses Russia of targeting rescue operation after strikes that killed 57](https://www.bbc.co.uk/news/articles/c30rk8x5g80qo) | ID: `Q056DC008C225`
 
+> He said several types of Ukrainian drones as well as the country's Flamingo and Neptune cruise missiles were fired overnight during a "pivotal stage".
+
+Source: BBC News | Published: 2026-11-17 | Speaker: Zelensky | Article: [Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine](https://www.bbc.co.uk/news/articles/cw772jk4rvmxo) | ID: `QF99B8E5B49B3`
+
+> Zelensky said the strike was the result of a seven-stage operation by the military and security services, which saw Ukrainian forces "gradually destroy air defence systems, radars, electronic warfare equipment, and other designated targets on the way to the final objective".
+
+Source: BBC News | Published: 2026-11-17 | Speaker: Zelensky | Article: [Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine](https://www.bbc.co.uk/news/articles/cw772jk4rvmxo) | ID: `QB9816D265D04`
+
 > For the second day in a row, Russia recorded the biggest Ukrainian drone attack since the war began, with 2,256 drones downed, according to the defence ministry.
 
 Source: BBC News | Published: 2026-11-17 | Article: [Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine](https://www.bbc.co.uk/news/articles/cw772jk4rvmxo) | ID: `Q05A1955439B6`
@@ -187,6 +295,10 @@ Source: BBC News | Published: 2026-11-16 | Article: [Landmark Crimea bridge hit 
 > The Moscow-installed head of Crimea, Sergei Aksyonov, confirmed that drones had struck the Crimean Bridge connecting Russia with the annexed peninsula, leading to traffic restrictions.
 
 Source: BBC News | Published: 2026-11-16 | Speaker: Sergei Aksyonov | Article: [Landmark Crimea bridge hit as Russia reports biggest Ukrainian drone attack of war](https://www.bbc.co.uk/news/articles/ckx27v6dpjz0o) | ID: `Q6E55F6E3B989`
+
+> The Russian military intercepted and destroyed 2,049 drones and four Flamingo long-distance missiles over 24 hours, officials said.
+
+Source: BBC News | Published: 2026-11-16 | Article: [Landmark Crimea bridge hit as Russia reports biggest Ukrainian drone attack of war](https://www.bbc.co.uk/news/articles/ckx27v6dpjz0o) | ID: `Q49DDADDA40D9`
 
 > He said that Ukraine is a battlefield between Russia and the West, and he thinks the West ignored Russia's security concerns and threatens its sovereignty.
 
@@ -218,7 +330,19 @@ Source: BBC News | Published: 2026-11-13 | Speaker: Vladimir Putin | Article: [Z
 
 ## Peace Initiatives and Negotiations
 
-**Summary (model-written):** US and European officials express growing optimism that talks are taking shape, with a six-nation European team set to join negotiations and Kushner declaring "peace is achievable." However, core disagreements persist, with Russia's maximalist demands and continued infrastructure strikes casting doubt on whether a deal is near.
+**Summary (model-written):** Peace talks are expanding in scope, with Europe organizing a unified negotiating position and the US actively mediating, but remain stalled on substance as Russia maintains maximalist demands and rejects ceasefire offers.
+
+> He thinks more needs to be done to advance peace talks, after which "we have to organize the Marshall Plan for Ukraine," Babis said, referring to a U.S. initiative after World War II to stimulate reconstruction in Western Europe.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Andrej Babis | Article: ['Solidarity' and winter top EU agenda as leaders discuss new support for Ukraine](https://kyivindependent.com/solidarity-and-winter-top-eu-agenda-as-leaders-discuss-new-support-for-ukraine) | ID: `QFBF9098D817A`
+
+> "If we think realistically, the chances of peace are much greater in the spring than now," Dan said.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Nicosur Dan | Article: ['Solidarity' and winter top EU agenda as leaders discuss new support for Ukraine](https://kyivindependent.com/solidarity-and-winter-top-eu-agenda-as-leaders-discuss-new-support-for-ukraine) | ID: `QBB6DBE90EDB1`
+
+> The mission took place in late October under a temporary ceasefire negotiated between Ukraine and Russia with the involvement of U.S. first lady Melania Trump.
+
+Source: The Kyiv Independent | Published: 2026-11-25 | Article: [Ukrainian journalists outnumbered 30 to 1 by Russian propagandists during Oleshky evacuation, reporter says](https://kyivindependent.com/ukrainian-journalists-outnumbered-30-to-1-by-russian-propagandists-during-oleshky-evacuation-reporter-says) | ID: `Q5934D578BEF6`
 
 > He said an agreement had been reached for Russia to stop recruiting Kenyan nationals.
 
@@ -320,6 +444,10 @@ Source: BBC News | Published: 2026-11-13 | Speaker: Yuri Ushakov | Article: [Ros
 
 Source: BBC News | Published: 2026-11-13 | Speaker: Kaja Kallas | Article: [Rosenberg: Uncompromising Putin ups demands for peace with Ukraine](https://www.bbc.co.uk/news/articles/cq39glwprknjo) | ID: `Q4D3F34CFBC9A`
 
+> "Once we understand their true intentions and their readiness to facilitate the peace process, then it will be possible to take a decision about dialogue on Ukraine in a wider format," said Kremlin spokesman Dmitry Peskov.
+
+Source: BBC News | Published: 2026-11-13 | Speaker: Dmitry Peskov | Article: [Rosenberg: Uncompromising Putin ups demands for peace with Ukraine](https://www.bbc.co.uk/news/articles/cq39glwprknjo) | ID: `Q2F9FF1D56B57`
+
 > Taoiseach (Irish Prime Minister) Micheál Martin told a host of European leaders gathered in Dublin on Thursday that he believed the security of the region had been "fundamentally reshaped" by Russia's war.
 
 Source: BBC News | Published: 2026-11-13 | Speaker: Micheál Martin | Article: [Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks](https://www.bbc.co.uk/news/articles/ckn80j9jv3jxo) | ID: `Q9F0220A02787`
@@ -328,9 +456,77 @@ Source: BBC News | Published: 2026-11-13 | Speaker: Micheál Martin | Article: [
 
 Source: BBC News | Published: 2026-11-13 | Speaker: Kaja Kallas | Article: [Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks](https://www.bbc.co.uk/news/articles/ckn80j9jv3jxo) | ID: `Q363BDDEF3218`
 
+> Kushner said it would return "thousands of people to their families", but there were no further details over how many prisoners would be exchanged or when it would happen.
+
+Source: BBC News | Published: 2026-11-13 | Speaker: Jared Kushner | Article: [Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks](https://www.bbc.co.uk/news/articles/ckn80j9jv3jxo) | ID: `Q1BC1FA5796FB`
+
 ## International Support for Ukraine
 
-**Summary (model-written):** Allies are reinforcing their commitment to Ukraine with new funding packages and rhetoric of determination, though doubts persist over the scale of European funding and the risk of a US–Russia deal sidelining Kyiv.
+**Summary (model-written):** European leaders are consolidating financial and military support for Ukraine through new loan packages and air defense projects, though internal friction over opt-outs and delayed US deliveries introduce uncertainty about the durability of that backing.
+
+> "I think that is not a reasonable way of thinking; it is not in accordance with the rules of the European Council, and we should not make opt-outs a new tradition," said Swedish Prime Minister Ulf Kristersson.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Ulf Kristersson | Article: ['Solidarity' and winter top EU agenda as leaders discuss new support for Ukraine](https://kyivindependent.com/solidarity-and-winter-top-eu-agenda-as-leaders-discuss-new-support-for-ukraine) | ID: `QC2F7E197F885`
+
+> And Estonian Prime Minister Kristen Michal said that because "Ukraine probably will face a winter which is like hell... they must know that Europe has their back money-wise, with everything we have."
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Kristen Michal | Article: ['Solidarity' and winter top EU agenda as leaders discuss new support for Ukraine](https://kyivindependent.com/solidarity-and-winter-top-eu-agenda-as-leaders-discuss-new-support-for-ukraine) | ID: `QB30C9D3EB9DE`
+
+> For Merz, there is no question: "we have to help this country through a very difficult winter."
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Friedrich Merz | Article: ['Solidarity' and winter top EU agenda as leaders discuss new support for Ukraine](https://kyivindependent.com/solidarity-and-winter-top-eu-agenda-as-leaders-discuss-new-support-for-ukraine) | ID: `QA11E6317430B`
+
+> One senior EU official told the Kyiv Independent that in a Nov. 25 meeting of EU ambassadors, the feeling was clear that the opt-out on the 90 billion euro loan was required as a one-off in order to reach quick agreement on urgent support for Ukraine, but that it will not set a precedent in the long term.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Senior EU official | Article: ['Solidarity' and winter top EU agenda as leaders discuss new support for Ukraine](https://kyivindependent.com/solidarity-and-winter-top-eu-agenda-as-leaders-discuss-new-support-for-ukraine) | ID: `Q9B5D9575C4E3`
+
+> "Ukrainians are fighting for their own freedom but also for European democracy and values. We need to stand shoulder to shoulder with them," said Dutch Prime Minister Rob Jetten.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Rob Jetten | Article: ['Solidarity' and winter top EU agenda as leaders discuss new support for Ukraine](https://kyivindependent.com/solidarity-and-winter-top-eu-agenda-as-leaders-discuss-new-support-for-ukraine) | ID: `Q726BABAC13D1`
+
+> The meeting's agenda is dominated by three questions that Merz has said must move together: agreeing the EU's long-term budget for 2028-2034, securing sustainable financial support for Ukraine within that budget, and approving a 45 billion euro ($49 billion) loan for Kyiv in 2027.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: ['Solidarity' and winter top EU agenda as leaders discuss new support for Ukraine](https://kyivindependent.com/solidarity-and-winter-top-eu-agenda-as-leaders-discuss-new-support-for-ukraine) | ID: `Q5AAD6C6C0623`
+
+> "It is about solidarity here. This is not a one-way street," agreed Austrian Chancellor Christian Stocker.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Christian Stocker | Article: ['Solidarity' and winter top EU agenda as leaders discuss new support for Ukraine](https://kyivindependent.com/solidarity-and-winter-top-eu-agenda-as-leaders-discuss-new-support-for-ukraine) | ID: `Q513EF090CF79`
+
+> "If the European Union finances something, then it does so as the European Union, and 27 are part of this Union, not 23 or 24," Merz said, in reference to the four countries hoping to secure an opt-out from financing Ukraine: Bulgaria, Czechia, Hungary, and Slovakia.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Friedrich Merz | Article: ['Solidarity' and winter top EU agenda as leaders discuss new support for Ukraine](https://kyivindependent.com/solidarity-and-winter-top-eu-agenda-as-leaders-discuss-new-support-for-ukraine) | ID: `Q4EB4471D1215`
+
+> "If we regard Ukraine as a fighter for not only their own freedom but for our freedom too, we have to support them in solidarity and not 23 or 24 countries," said Lithuanian President Gitanas Nauseda.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Gitanas Nauseda | Article: ['Solidarity' and winter top EU agenda as leaders discuss new support for Ukraine](https://kyivindependent.com/solidarity-and-winter-top-eu-agenda-as-leaders-discuss-new-support-for-ukraine) | ID: `Q4CCDA3DC0305`
+
+> "I want to ask what the goal is. Every year we will pay Ukraine 135 billion euros. Until when? How many years? 10, 20, 30? What kind of strategy is this?" Babis asked.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Andrej Babis | Article: ['Solidarity' and winter top EU agenda as leaders discuss new support for Ukraine](https://kyivindependent.com/solidarity-and-winter-top-eu-agenda-as-leaders-discuss-new-support-for-ukraine) | ID: `Q11334882D6AC`
+
+> Putin pledged continued close cooperation with Pyongyang under their "comprehensive strategic partnership."
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Vladimir Putin | Article: [North Korea pauses military aid to Russia, Ukrainian intelligence says](https://kyivindependent.com/north-korea-pauses-military-aid-to-russia-ukrainian-intelligence-says) | ID: `QBABB280A6879`
+
+> Only on Sept. 9, Chinese President Xi Jinping and Russian President Vladimir Putin reaffirmed their countries' close ties with North Korea in messages marking the 78th anniversary of the country's founding, North Korean state media (KCNA) reported.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [North Korea pauses military aid to Russia, Ukrainian intelligence says](https://kyivindependent.com/north-korea-pauses-military-aid-to-russia-ukrainian-intelligence-says) | ID: `QB5BDDA0E5DE4`
+
+> "Unfortunately, we don't have any good news from the United States yet on accelerating deliveries. Deliveries are still delayed," Zelensky said in a video address.
+
+Source: The Kyiv Independent | Published: 2026-11-25 | Speaker: Volodymyr Zelensky | Article: [No good news from US on accelerating air defense missile deliveries, Zelensky says](https://kyivindependent.com/no-good-news-from-us-on-accelerating-air-defense-missile-deliveries-zelensky-says) | ID: `QA7E761E83C44`
+
+> A coalition of countries consisting of Denmark, France, Germany, Italy, the Netherlands, Norway, Spain, Sweden, and the U.K. joined Ukraine's Freya air defense project in July.
+
+Source: The Kyiv Independent | Published: 2026-11-25 | Article: [No good news from US on accelerating air defense missile deliveries, Zelensky says](https://kyivindependent.com/no-good-news-from-us-on-accelerating-air-defense-missile-deliveries-zelensky-says) | ID: `Q95312A954F3B`
+
+> "We are working out the component-related issues and other technical matters. The process of integrating the components has already begun," Zelensky said in his address.
+
+Source: The Kyiv Independent | Published: 2026-11-25 | Speaker: Volodymyr Zelensky | Article: [No good news from US on accelerating air defense missile deliveries, Zelensky says](https://kyivindependent.com/no-good-news-from-us-on-accelerating-air-defense-missile-deliveries-zelensky-says) | ID: `Q8758A9C945E6`
+
+> On Nov. 2, Melania Trump said nearly 800 people had been evacuated during the mission, although neither Kyiv nor Moscow publicly confirmed the figure.
+
+Source: The Kyiv Independent | Published: 2026-11-25 | Article: [Ukrainian journalists outnumbered 30 to 1 by Russian propagandists during Oleshky evacuation, reporter says](https://kyivindependent.com/ukrainian-journalists-outnumbered-30-to-1-by-russian-propagandists-during-oleshky-evacuation-reporter-says) | ID: `QDB027AFAEBA0`
 
 > "We are responding to Russia's aggression," President Volodymyr Zelensky said, calling both vessels legitimate targets.
 
@@ -400,7 +596,79 @@ Source: BBC News | Published: 2026-11-15 | Speaker: Volodymyr Zelensky | Article
 
 ## Sanctions and Economic Pressure on Russia
 
-**Summary (model-written):** Economic pressure on Russia is intensifying, with the UK sanctioning the country's ten major oil producers and strikes on refineries pushing global prices higher, while Putin himself acknowledges unprecedented sanctions pressure.
+**Summary (model-written):** Sanctions pressure on Russia is intensifying, with the EU expanding its regime to new targets and activating countrywide measures, the UK sanctioning Russia's top oil producers, and Ukrainian drone strikes on refineries compounding the economic impact of existing price caps.
+
+> Draft documents circulated to EU countries on Nov. 25 and seen by the Kyiv Independent confirm previous reporting that the bloc will activate a countrywide sanctions measure for the first time — against Kyrgyzstan for its role in helping Russia evade financial restrictions by using cryptocurrency.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [Cyprus takes aim at Turkey's role in helping Russia evade sanctions](https://kyivindependent.com/cyprus-takes-aim-at-turkeys-role-in-helping-russia-evade-sanctions) | ID: `QDAB39E8ED2EC`
+
+> Those same documents include proposals to add nine Turkish companies to the EU's Russia sanctions regime.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [Cyprus takes aim at Turkey's role in helping Russia evade sanctions](https://kyivindependent.com/cyprus-takes-aim-at-turkeys-role-in-helping-russia-evade-sanctions) | ID: `QBEE0ECFC3CAB`
+
+> And the report notes that Ukrainian drone attacks on refineries have exacerbated the problem for Moscow, leading seaborne exports of petroleum products to drop by a third.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [Exclusive: EU report confirms Trump threw Russian energy sector an economic lifeline even as sanctions, Ukrainian drones bite hard](https://kyivindependent.com/exclusive-eu-report-confirms-trump-threw-russian-energy-sector-an-economic-lifeline-even-as-sanctions-ukrainian-drones-bite-hard) | ID: `Q975AF78A947E`
+
+> But the report also mentions that one country has failed to tighten its oil price cap in tandem with other countries belonging to the Price Cap Coalition — the U.S.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [Exclusive: EU report confirms Trump threw Russian energy sector an economic lifeline even as sanctions, Ukrainian drones bite hard](https://kyivindependent.com/exclusive-eu-report-confirms-trump-threw-russian-energy-sector-an-economic-lifeline-even-as-sanctions-ukrainian-drones-bite-hard) | ID: `Q74EB80CA2AAF`
+
+> Likewise, the report estimates that Russia's need to build a shadow fleet to help it evade Western sanctions has cost Moscow likely in excess of $10 billion.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [Exclusive: EU report confirms Trump threw Russian energy sector an economic lifeline even as sanctions, Ukrainian drones bite hard](https://kyivindependent.com/exclusive-eu-report-confirms-trump-threw-russian-energy-sector-an-economic-lifeline-even-as-sanctions-ukrainian-drones-bite-hard) | ID: `Q6AD2C6AF62DE`
+
+> It further estimates that, absent a price cap, Russian crude oil exports by sea would have been $30 billion higher, and Moscow would have earned $10-$15 billion more from petroleum products since March.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [Exclusive: EU report confirms Trump threw Russian energy sector an economic lifeline even as sanctions, Ukrainian drones bite hard](https://kyivindependent.com/exclusive-eu-report-confirms-trump-threw-russian-energy-sector-an-economic-lifeline-even-as-sanctions-ukrainian-drones-bite-hard) | ID: `Q5641692AF9D6`
+
+> Nevinnomyssk Azot has been officially sanctioned by Ukraine for its role in supplying the Russian military. Key employees of the factory were hit with a new round of sanctions in October 2026.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [Ukrainian drones attack key Russian fertilizer plant linked to explosives production, Stavropol Krai governor says](https://kyivindependent.com/ukrainian-drones-attack-key-russian-fertilizer-plant-linked-to-explosives-production-in-stavropol-krai-local-official-says) | ID: `Q5DA6DF17E14D`
+
+> "We call for the immediate cessation of the use of any toxic chemicals and of riot control agents as a method of warfare in Ukraine," the statement reads.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: joint statement | Article: [Over 30 countries demand Russia stop using chemical agents as weapons of war in Ukraine](https://kyivindependent.com/over-30-countries-demand-russia-stop-using-chemical-agents-as-weapons-of-war-in-ukraine) | ID: `QD4FD9200C3B9`
+
+> A coalition of 34 countries and the European Union issued a joint statement on Nov. 25 calling for Russia to end the use of toxic chemicals and riot-control agents on the battlefield in Ukraine.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [Over 30 countries demand Russia stop using chemical agents as weapons of war in Ukraine](https://kyivindependent.com/over-30-countries-demand-russia-stop-using-chemical-agents-as-weapons-of-war-in-ukraine) | ID: `QA7C7C9A0D8CD`
+
+> "Next steps need to include the identification of perpetrators through the mechanisms of the OPCW and in line with the Chemical Weapons Convention. We reaffirm our strong support for the OPCW's efforts in this regard."
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: joint statement | Article: [Over 30 countries demand Russia stop using chemical agents as weapons of war in Ukraine](https://kyivindependent.com/over-30-countries-demand-russia-stop-using-chemical-agents-as-weapons-of-war-in-ukraine) | ID: `Q6CDA55E25AEC`
+
+> Both the U.S. and the U.K. have imposed sanctions against Russian officials and entities explicitly linked to the use of chemical weapons attacks against Ukraine.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [Over 30 countries demand Russia stop using chemical agents as weapons of war in Ukraine](https://kyivindependent.com/over-30-countries-demand-russia-stop-using-chemical-agents-as-weapons-of-war-in-ukraine) | ID: `Q6A597EC7C41A`
+
+> The energy giant has faced sanctions imposed by Ukraine's allies in response to Russia's war against Ukraine.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [US billionaire, government agency ink deal to acquire sanctioned Russian oil giant Lukoil's global assets](https://kyivindependent.com/us-consortium-announces-deal-to-acquire-sanctioned-russian-oil-company-lukoils-global-subsidiary) | ID: `QCA2B8B24173B`
+
+> The U.S. International Development Finance Corporation (DFC) will obtain an ownership interest, sale consideration will be held in a "restricted custodial account for five years or until sanctions are lifted," and LIG will be completely severed from Lukoil upon closing, according to the press release.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [US billionaire, government agency ink deal to acquire sanctioned Russian oil giant Lukoil's global assets](https://kyivindependent.com/us-consortium-announces-deal-to-acquire-sanctioned-russian-oil-company-lukoils-global-subsidiary) | ID: `Q1870BC266CA2`
+
+> North Korea has ordered Switzerland's diplomatic representative to leave the country within 48 hours and called for the office to close, in a row over sanctions.
+
+Source: BBC News | Published: 2026-11-25 | Article: [North Korea expels Swiss diplomat in sanctions row](https://www.bbc.com/news/articles/cq0l34e4kkr5o) | ID: `QD6747310A777`
+
+> North Korea's state-run news agency KCNA called the sanctions "a blatant hostile act".
+
+Source: BBC News | Published: 2026-11-25 | Speaker: KCNA | Article: [North Korea expels Swiss diplomat in sanctions row](https://www.bbc.com/news/articles/cq0l34e4kkr5o) | ID: `QB72F247C50DB`
+
+> It followed Switzerland's decision to place sanctions on the Songdowon international children's camp in the eastern city of Wonsan, which is attended by Russian and Chinese children among other nationalities.
+
+Source: BBC News | Published: 2026-11-25 | Article: [North Korea expels Swiss diplomat in sanctions row](https://www.bbc.com/news/articles/cq0l34e4kkr5o) | ID: `Q26017377AE4A`
+
+> Switzerland's department of foreign affairs said the country "distinguishes between its sanctions policy and its commitment to maintaining dialogue with all countries".
+
+Source: BBC News | Published: 2026-11-25 | Article: [North Korea expels Swiss diplomat in sanctions row](https://www.bbc.com/news/articles/cq0l34e4kkr5o) | ID: `Q0DEFC63FB88D`
+
+> On Tuesday, President Vladimir Putin called for a tightening of security measures across the country's energy facilities.
+
+Source: BBC News | Published: 2026-11-25 | Speaker: President Vladimir Putin | Article: [Five Russian military jets hit in airfield strike, says Ukraine](https://www.bbc.co.uk/news/articles/ck9q8xp5r5pgo) | ID: `QF6104924C73C`
 
 > The UK also pledged further air defence support this week and sanctioned Russia's 10 major oil producers.
 
@@ -416,7 +684,111 @@ Source: BBC News | Published: 2026-11-15 | Speaker: Donald Trump | Article: [Zel
 
 ## Conflicting Parties' Resources
 
-**Summary (model-written):** Russian manpower strain is growing, with the average age of those killed rising and recruitment expanding to Central Asian, North Korean, and African fighters, while Ukraine's deep-strike drone capability is expanding, hitting refineries, the Crimea bridge, and air defenses.
+**Summary (model-written):** Ukrainian strikes on Russian refineries and export hubs have intensified, but Russia's oil export revenues have grown to exceed the full-year 2025 total by September. North Korea's military support to Russia, including 14,000 troops and ballistic missiles, has been temporarily suspended over a diplomatic dispute.
+
+> Since 2024, Russia has launched at least several dozen North Korean ballistic missiles on Ukrainian territory.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [North Korea pauses military aid to Russia, Ukrainian intelligence says](https://kyivindependent.com/north-korea-pauses-military-aid-to-russia-ukrainian-intelligence-says) | ID: `Q8F8381CB4353`
+
+> North Korea has temporarily suspended its military aid to Russia following a diplomatic dispute over Russia's approach to South Korea, Ukraine's military intelligence (HUR) said on Nov. 26.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [North Korea pauses military aid to Russia, Ukrainian intelligence says](https://kyivindependent.com/north-korea-pauses-military-aid-to-russia-ukrainian-intelligence-says) | ID: `Q7980625550BA`
+
+> The measures include banning Russian military transport aircraft from North Korean airspace and a delivery stop for KN-23 ballistic missiles and artillery shells, HUR said.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [North Korea pauses military aid to Russia, Ukrainian intelligence says](https://kyivindependent.com/north-korea-pauses-military-aid-to-russia-ukrainian-intelligence-says) | ID: `Q5C9F5E25161C`
+
+> North Korea was also holding off on a request to expand its existing troop contingent of 8,500 soldiers in Russia to 50,000, according to HUR.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [North Korea pauses military aid to Russia, Ukrainian intelligence says](https://kyivindependent.com/north-korea-pauses-military-aid-to-russia-ukrainian-intelligence-says) | ID: `Q56C8385416D9`
+
+> Pyongyang has supplied Moscow with ballistic missiles and artillery ammunition for its war against Ukraine, according to Ukrainian and Western officials, and sent an estimated 14,000 troops to fight alongside Russian forces in Kursk Oblast.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [North Korea pauses military aid to Russia, Ukrainian intelligence says](https://kyivindependent.com/north-korea-pauses-military-aid-to-russia-ukrainian-intelligence-says) | ID: `Q4DEA0ACA1F74`
+
+> According to HUR, units of North Korea's 11th Special Operations Forces Corps remain in Russia's Kursk Oblast, and a North Korean missile unit has been operating in Russia's Voronezh Oblast as part of Russia's 112th Missile Brigade since mid-summer.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [North Korea pauses military aid to Russia, Ukrainian intelligence says](https://kyivindependent.com/north-korea-pauses-military-aid-to-russia-ukrainian-intelligence-says) | ID: `Q423AD7637E8E`
+
+> HUR alleged that Choe then announced a temporary stop of military support to Moscow, supposedly on a personal decision made by North Korean leader Kim Jong Un.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Kim Jong Un | Article: [North Korea pauses military aid to Russia, Ukrainian intelligence says](https://kyivindependent.com/north-korea-pauses-military-aid-to-russia-ukrainian-intelligence-says) | ID: `Q2A689D904E04`
+
+> More than 6,000 of those soldiers have been killed, according to South Korean, Ukrainian, and Western officials.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [North Korea pauses military aid to Russia, Ukrainian intelligence says](https://kyivindependent.com/north-korea-pauses-military-aid-to-russia-ukrainian-intelligence-says) | ID: `Q261F04B22312`
+
+> On Nov. 19, Ukrainian forces struck the Kaleykino oil pumping station in Russia's Tatarstan Republic, damaging three storage tanks, the General Staff said.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: General Staff | Article: [2 Russian oil facilities reportedly on fire in Bashkortostan and Samara Oblast](https://kyivindependent.com/2-russian-oil-facilities-reportedly-on-fire-in-bashkortostan-and-samara-oblast) | ID: `QFD45894D3460`
+
+> On Nov. 14, Ukrainian forces also struck the Samara Linear Production and Dispatch Station near the village of Prosvet, another major hub in Russia's oil export network. The facility blends crude from several Russian regions to produce Urals, an export grade accounting for up to half of Russia's oil exports, according to the General Staff.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: General Staff | Article: [2 Russian oil facilities reportedly on fire in Bashkortostan and Samara Oblast](https://kyivindependent.com/2-russian-oil-facilities-reportedly-on-fire-in-bashkortostan-and-samara-oblast) | ID: `QF5B1A4B03B37`
+
+> The Kuibyshev refinery, one of the largest oil processing facilities in Samara Oblast, is owned by Russia's state-controlled oil giant Rosneft, the General Staff said.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: General Staff | Article: [2 Russian oil facilities reportedly on fire in Bashkortostan and Samara Oblast](https://kyivindependent.com/2-russian-oil-facilities-reportedly-on-fire-in-bashkortostan-and-samara-oblast) | ID: `Q157AE5569572`
+
+> For several months, Ukraine has been attacking Russian energy sites to reduce Moscow's oil profits and deplete fuel powering Russian forces.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [2 Russian oil facilities reportedly on fire in Bashkortostan and Samara Oblast](https://kyivindependent.com/2-russian-oil-facilities-reportedly-on-fire-in-bashkortostan-and-samara-oblast) | ID: `Q0001486D7130`
+
+> "After declining during the summer, revenues increased again to $14.5 billion in September 2026," reads the report.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [Exclusive: EU report confirms Trump threw Russian energy sector an economic lifeline even as sanctions, Ukrainian drones bite hard](https://kyivindependent.com/exclusive-eu-report-confirms-trump-threw-russian-energy-sector-an-economic-lifeline-even-as-sanctions-ukrainian-drones-bite-hard) | ID: `QC86A02A88D61`
+
+> Russia's crude oil export revenue of $102 billion for January-September 2026 "already exceeds the total amount recorded for the whole of 2025 ($101 billion)," notes the report.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [Exclusive: EU report confirms Trump threw Russian energy sector an economic lifeline even as sanctions, Ukrainian drones bite hard](https://kyivindependent.com/exclusive-eu-report-confirms-trump-threw-russian-energy-sector-an-economic-lifeline-even-as-sanctions-ukrainian-drones-bite-hard) | ID: `QBB495D35D050`
+
+> Oil flows from March-May 2026 were 85% lower than before the all-out war, notes the report.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [Exclusive: EU report confirms Trump threw Russian energy sector an economic lifeline even as sanctions, Ukrainian drones bite hard](https://kyivindependent.com/exclusive-eu-report-confirms-trump-threw-russian-energy-sector-an-economic-lifeline-even-as-sanctions-ukrainian-drones-bite-hard) | ID: `Q8B86ED1E02E4`
+
+> The end result for Russia was a significant increase in crude oil export revenues from $6 billion in February, to $11.3 billion one month later.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [Exclusive: EU report confirms Trump threw Russian energy sector an economic lifeline even as sanctions, Ukrainian drones bite hard](https://kyivindependent.com/exclusive-eu-report-confirms-trump-threw-russian-energy-sector-an-economic-lifeline-even-as-sanctions-ukrainian-drones-bite-hard) | ID: `Q3C85F5FEF07D`
+
+> The plant produces up to 1 million tons of ammonia and more than 1 million tons of ammonium nitrate annually, materials used in the production of explosives and artillery shells.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [Ukrainian drones attack key Russian fertilizer plant linked to explosives production, Stavropol Krai governor says](https://kyivindependent.com/ukrainian-drones-attack-key-russian-fertilizer-plant-linked-to-explosives-production-in-stavropol-krai-local-official-says) | ID: `QC5CCEB254862`
+
+> According to Ukrainian authorities, Russian troops have repeatedly launched K-51, RGR, and RG-VO aerosol grenades loaded with the prohibited agents CS (chlorobenzylidene malonitrile) and CN (chloroacetophenone).
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [Over 30 countries demand Russia stop using chemical agents as weapons of war in Ukraine](https://kyivindependent.com/over-30-countries-demand-russia-stop-using-chemical-agents-as-weapons-of-war-in-ukraine) | ID: `QAC4009E5E856`
+
+> Under the newly announced deal, the Austrian-based international subsidiary known as Lukoil International GmbH (LIG) will be acquired in a share swap. Lukoil will receive restricted shares of its company (PJSC Lukoil) and other Russian companies in exchange for 100% of LIG's equity, Eldridge announced in a press release.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [US billionaire, government agency ink deal to acquire sanctioned Russian oil giant Lukoil's global assets](https://kyivindependent.com/us-consortium-announces-deal-to-acquire-sanctioned-russian-oil-company-lukoils-global-subsidiary) | ID: `QD496FA01B50F`
+
+> Lukoil is the second-largest oil company in Russia after state-owned Rosneft and is the largest private oil company in the country.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [US billionaire, government agency ink deal to acquire sanctioned Russian oil giant Lukoil's global assets](https://kyivindependent.com/us-consortium-announces-deal-to-acquire-sanctioned-russian-oil-company-lukoils-global-subsidiary) | ID: `Q1CC7FF5B87C6`
+
+> The camp has been accused of involvement in transferring children from Russian-occupied areas of Ukraine.
+
+Source: BBC News | Published: 2026-11-25 | Article: [North Korea expels Swiss diplomat in sanctions row](https://www.bbc.com/news/articles/cq0l34e4kkr5o) | ID: `Q868BFCFFD90B`
+
+> Ukrainian forces struck the Syzran and Kuibyshev oil refineries in Russia's Samara Oblast overnight on Nov. 25, the General Staff confirmed.
+
+Source: The Kyiv Independent | Published: 2026-11-25 | Article: [Ukraine war latest: Poland plans no-fly zone near Ukraine border, asks NATO to intercept Russian missiles over Ukraine](https://kyivindependent.com/ukraine-war-latest-poland-plans-no-fly-zone-near-ukraine-border-asks-nato-to-intercept-russian-missiles-over-ukraine) | ID: `QDF309E1B2603`
+
+> The strike on the Kuibyshev oil refinery caused a fire and damaged the AVT-4 and AVT-5 primary oil processing units, a catalytic reforming unit, and two storage tanks, according to the report.
+
+Source: The Kyiv Independent | Published: 2026-11-25 | Article: [Ukraine war latest: Poland plans no-fly zone near Ukraine border, asks NATO to intercept Russian missiles over Ukraine](https://kyivindependent.com/ukraine-war-latest-poland-plans-no-fly-zone-near-ukraine-border-asks-nato-to-intercept-russian-missiles-over-ukraine) | ID: `QC11AB6AF6971`
+
+> A large fire also broke out at the Syzran oil refinery. Preliminary reports indicated that the strike hit the AVT-6 primary oil processing unit, a sulfur treatment unit, a catalytic reforming unit, a hydrotreating unit, an isomerization unit, as well as two storage tanks, the General Staff said.
+
+Source: The Kyiv Independent | Published: 2026-11-25 | Article: [Ukraine war latest: Poland plans no-fly zone near Ukraine border, asks NATO to intercept Russian missiles over Ukraine](https://kyivindependent.com/ukraine-war-latest-poland-plans-no-fly-zone-near-ukraine-border-asks-nato-to-intercept-russian-missiles-over-ukraine) | ID: `Q65FD3E3D438A`
+
+> Ukraine's Foreign Ministry said in May that the city's population had fallen from around 24,000 to approximately 2,000, while much of its critical infrastructure had been destroyed and residents were left without electricity and gas, with food supplies shrinking.
+
+Source: The Kyiv Independent | Published: 2026-11-25 | Article: [Ukrainian journalists outnumbered 30 to 1 by Russian propagandists during Oleshky evacuation, reporter says](https://kyivindependent.com/ukrainian-journalists-outnumbered-30-to-1-by-russian-propagandists-during-oleshky-evacuation-reporter-says) | ID: `Q33584FCD84AA`
+
+> The airfield at Savasleyka, in Russia's Nizhny Novgorod region, has been a target for Ukraine for several years. It hosts aircraft used by Russia to launch hypersonic missiles and glide bombs.
+
+Source: BBC News | Published: 2026-11-25 | Article: [Five Russian military jets hit in airfield strike, says Ukraine](https://www.bbc.co.uk/news/articles/ck9q8xp5r5pgo) | ID: `QDF94A306BB4E`
 
 > According to BBC Russian's analysis of the leaked files, in the first year of the war the average age of those killed was 34. By 2025, as prisoners and contract soldiers entered the ranks, it had risen to 40 (38 according to our own list).
 
@@ -544,7 +916,27 @@ Source: BBC News | Published: 2026-11-13 | Speaker: Ukrainian President Volodymy
 
 ## Energy and Critical Infrastructure
 
-**Summary (model-written):** Russia is intensifying strikes on Ukraine's energy infrastructure as winter takes hold, with frequent blackouts and heating disruptions expected. A missile hit to the Crimean Bridge has damaged its arch, disrupting road traffic and potentially blocking the shipping channel.
+**Summary (model-written):** Russia is intensifying strikes on Ukraine's energy infrastructure ahead of winter, with capacity already below 40% of pre-war levels, while Ukraine continues hitting Russian refineries and oil transport facilities.
+
+> Since Russia launched its full-scale invasion, MacAlpine said Ukraine’s energy capacity is below 40 percent of pre-war levels, as a number of the combined heating and power plants in Kyiv and the region have repeatedly gone offline due to attacks.
+
+Source: Al Jazeera | Published: 2026-11-26 | Speaker: Audrey MacAlpine | Article: [Ukraine drone attack kills five in Russian-occupied Zaporizhia](https://www.aljazeera.com/news/2026/11/26/ukraine-drone-attack-kills-five-in-russian-occupied-zaporizhia?traffic_source=rss) | ID: `Q67BB4B7A1691`
+
+> “Russia has also been hitting power plants ahead of cold weather. The aim is to wear down morale and inflict economic damage, in addition to all these military effects,” she added.
+
+Source: Al Jazeera | Published: 2026-11-26 | Speaker: Yulia Shapovalova | Article: [Ukraine drone attack kills five in Russian-occupied Zaporizhia](https://www.aljazeera.com/news/2026/11/26/ukraine-drone-attack-kills-five-in-russian-occupied-zaporizhia?traffic_source=rss) | ID: `Q233CA4786C56`
+
+> Ukrainian monitoring channels reported fires at a Transneft oil transportation and storage facility in the Russian Republic of Bashkortostan after a supposed Ukrainian strike, and at the Kuibyshev refinery in Russia's Samara Oblast overnight on Nov. 26.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Article: [2 Russian oil facilities reportedly on fire in Bashkortostan and Samara Oblast](https://kyivindependent.com/2-russian-oil-facilities-reportedly-on-fire-in-bashkortostan-and-samara-oblast) | ID: `QC7557DCBB06F`
+
+> The monitoring channels reported that a new fire broke out at the Kuibyshev refinery on the morning of Nov. 26. The refinery was targeted overnight on Nov. 25, when Ukrainian forces struck two oil refineries in Samara Oblast, as the General Staff confirmed.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: General Staff | Article: [2 Russian oil facilities reportedly on fire in Bashkortostan and Samara Oblast](https://kyivindependent.com/2-russian-oil-facilities-reportedly-on-fire-in-bashkortostan-and-samara-oblast) | ID: `QC153C0AFC4C5`
+
+> The local Russian media outlet Bashinform reported an air raid alert in the region. Drone debris fell within the industrial zone and sparked a fire, Bashinform cited Bulat Musin, the head of the Tuymazinsky district administration.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Bulat Musin | Article: [2 Russian oil facilities reportedly on fire in Bashkortostan and Samara Oblast](https://kyivindependent.com/2-russian-oil-facilities-reportedly-on-fire-in-bashkortostan-and-samara-oblast) | ID: `Q74F0D65B3A6B`
 
 > It continues to pound Kyiv's energy infrastructure to cripple it as winter takes hold, increasing numbers of civilian casualties are being recorded across the country, and Kremlin officials have not budged from Russia's demands for Ukrainian sovereign territory.
 
@@ -568,7 +960,23 @@ Source: BBC News | Published: 2026-11-15 | Article: [Hull man and wife who fled 
 
 ## Escalation Risks and Spillover
 
-**Summary (model-written):** The war is spilling over into NATO territory with growing frequency and severity, from Russian missiles landing in Poland to repeated airspace violations and sabotage attempts across Europe, while reports of a possible Russian nuclear-capable satellite launch raise the stakes further.
+**Summary (model-written):** Officials and analysts describe a clear pattern of the war spilling beyond Ukraine's borders, with Russian missiles striking Polish airspace, sabotage plots across Europe, and a possible nuclear-capable satellite launch, while NATO leaders warn of further escalation.
+
+> "Russia's calculation at this time is that winter benefits it, because it is additional pressure on Ukraine's energy networks, on Ukrainian society," said Romanian President Nicosur Dan.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Nicosur Dan | Article: ['Solidarity' and winter top EU agenda as leaders discuss new support for Ukraine](https://kyivindependent.com/solidarity-and-winter-top-eu-agenda-as-leaders-discuss-new-support-for-ukraine) | ID: `QF59E506F7FCF`
+
+> Nauseda agreed, saying that he thinks Russia "will try to make the Ukrainian people suffer one more terrible winter."
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Gitanas Nauseda | Article: ['Solidarity' and winter top EU agenda as leaders discuss new support for Ukraine](https://kyivindependent.com/solidarity-and-winter-top-eu-agenda-as-leaders-discuss-new-support-for-ukraine) | ID: `QD8924F33DB42`
+
+> Meanwhile, US President Donald Trump and NATO chief Mark Rutte urged Russia not to “expand the war” in Ukraine, in a joint statement issued on Wednesday after meeting in Florida.
+
+Source: Al Jazeera | Published: 2026-11-26 | Article: [Ukraine drone attack kills five in Russian-occupied Zaporizhia](https://www.aljazeera.com/news/2026/11/26/ukraine-drone-attack-kills-five-in-russian-occupied-zaporizhia?traffic_source=rss) | ID: `QD105B322E2B4`
+
+> Polish Deputy Defense Minister Cezary Tomczyk said the planned no-fly zone would extend to over ten kilometers (six miles) from the country's eastern border.
+
+Source: The Kyiv Independent | Published: 2026-11-25 | Speaker: Cezary Tomczyk | Article: [Ukraine war latest: Poland plans no-fly zone near Ukraine border, asks NATO to intercept Russian missiles over Ukraine](https://kyivindependent.com/ukraine-war-latest-poland-plans-no-fly-zone-near-ukraine-border-asks-nato-to-intercept-russian-missiles-over-ukraine) | ID: `QBFB8E48C80F8`
 
 > Estonia has also accused Moscow of being behind an attempted arson attack at a drone factory last week, and Germany blamed it for a drone attack at Leipzig's airport in August.
 
@@ -688,6 +1096,10 @@ Source: BBC News | Published: 2026-11-20 | Speaker: Wladyslaw Kosiniak‑Kamysz 
 
 Source: BBC News | Published: 2026-11-20 | Speaker: Donald Tusk | Article: [Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk](https://www.bbc.co.uk/news/articles/cqx2x9dklxnro) | ID: `Q3E592105F68C`
 
+> He called the incursion into Polish airspace a "provocation" from Russia and said he would be asking Nato for additional support.
+
+Source: BBC News | Published: 2026-11-20 | Speaker: Wladyslaw Kosiniak‑Kamysz | Article: [Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk](https://www.bbc.co.uk/news/articles/cqx2x9dklxnro) | ID: `Q065888D53279`
+
 > On Friday, Poland's Prime Minister Donald Tusk accused Russia of an "intentional provocation" after a Russian cruise missile landed in his country.
 
 Source: BBC News | Published: 2026-11-20 | Speaker: Poland's Prime Minister Donald Tusk | Article: [Russia targets Kyiv crossings days after Ukraine hits Crimean Bridge](https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o) | ID: `Q39DDD650C164`
@@ -758,7 +1170,23 @@ Source: BBC News | Published: 2026-11-13 | Article: [Aide to pro-Kremlin Ukraini
 
 ## Domestic Politics and Public Opinion
 
-**Summary (model-written):** Growing elite discontent with Putin is evident in shifting attitudes among Russia's business class, though fear of retaliation keeps them from acting. The arrest of a regional governor, a first since the war began, and the absence of a clear successor signal increasing uncertainty around Putin's long-term hold on power.
+**Summary (model-written):** Russia's first arrest of a regional governor since the war began and a noticeable shift in how oligarchs refer to Putin point to growing internal unease, though analysts stress no one will move against him while he is alive.
+
+> The alternative to providing support and helping Ukraine end the war, Merz suggested, would be "new refugee flows out of Ukraine," which he thinks is in the interest of "no one in Europe."
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Friedrich Merz | Article: ['Solidarity' and winter top EU agenda as leaders discuss new support for Ukraine](https://kyivindependent.com/solidarity-and-winter-top-eu-agenda-as-leaders-discuss-new-support-for-ukraine) | ID: `Q260FE3821B65`
+
+> North Korea's Foreign Minister Choe Son Hui supposedly responded in late October that such remarks were not in line with the two countries' alliance and demanded clarification of Russia's policy toward South Korea, according to HUR.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Choe Son Hui | Article: [North Korea pauses military aid to Russia, Ukrainian intelligence says](https://kyivindependent.com/north-korea-pauses-military-aid-to-russia-ukrainian-intelligence-says) | ID: `QBD10C88AE9B5`
+
+> HUR claimed that tensions began rising in October after Russian Deputy Foreign Minister Andrei Rudenko reportedly claimed to help de-escalate tensions between Seoul and Pyongyang.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Andrei Rudenko | Article: [North Korea pauses military aid to Russia, Ukrainian intelligence says](https://kyivindependent.com/north-korea-pauses-military-aid-to-russia-ukrainian-intelligence-says) | ID: `Q0092C1E3ED4E`
+
+> "Time and again, this administration demonstrates it will stop at nothing to empower Russia and undercut Ukraine. The American people deserve to know why a U.S. government agency is taking an ownership stake in a Russian oil company's portfolio while Russia continues its war," he said.
+
+Source: The Kyiv Independent | Published: 2026-11-26 | Speaker: Gregory Meeks | Article: [US billionaire, government agency ink deal to acquire sanctioned Russian oil giant Lukoil's global assets](https://kyivindependent.com/us-consortium-announces-deal-to-acquire-sanctioned-russian-oil-company-lukoils-global-subsidiary) | ID: `Q54C7C0664467`
 
 > Murmansk is a key military point for Russia in the Arctic and is home to the Russian navy's Northern fleet.
 
