@@ -206,6 +206,7 @@ def gdelt_range(fetcher: Fetcher, source: Source, start: date, end: date) -> lis
 # Internet Archive capture index ---------------------------------------------------
 
 CDX_URL = "https://web.archive.org/cdx/search/cdx"
+MAX_ARCHIVE_FAILURES = 3  # in a row; after that, fall through to GDELT
 URL_DATE = re.compile(r"-(20\d\d-\d\d-\d\d)/?$")
 
 
@@ -214,8 +215,12 @@ def wayback_range(fetcher: Fetcher, source: Source, start: date, end: date) -> l
     one day at a time. Reuters puts the publication date at the end of its
     URLs, which is used as the date when present."""
     out = []
+    failures = 0
     day = start
     while day <= end:
+        if failures >= MAX_ARCHIVE_FAILURES:
+            log.warning("archive index is not answering; giving up on it for %s", source.id)
+            break
         for prefix in source.wayback_prefixes:
             params = {
                 "url": prefix, "matchType": "prefix", "output": "json",
@@ -224,10 +229,15 @@ def wayback_range(fetcher: Fetcher, source: Source, start: date, end: date) -> l
                 "fl": "original,timestamp", "limit": "5000",
             }
             try:
-                res = fetcher.get(f"{CDX_URL}?{urlencode(params)}", accept="application/json", retries=4)
+                res = fetcher.get(f"{CDX_URL}?{urlencode(params)}", accept="application/json",
+                                  retries=2, timeout=120)
                 rows = json.loads(res.text) if res.text.strip() else []
+                failures = 0
             except (FetchError, json.JSONDecodeError) as e:
+                failures += 1
                 log.warning("archive index failed for %s %s: %s", prefix, day, getattr(e, "reason", e))
+                if failures >= MAX_ARCHIVE_FAILURES:
+                    break
                 continue
             for row in rows[1:]:
                 url = row[0].replace("http://", "https://", 1).replace(":80/", "/", 1).split("?")[0]

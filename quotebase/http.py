@@ -81,7 +81,8 @@ class Fetcher:
         self._last_hit[host] = time.monotonic()
 
     def get(self, url: str, *, accept: str | None = None, retries: int = 3,
-            min_delay: float | None = None, extra_headers: dict | None = None) -> FetchResult:
+            min_delay: float | None = None, extra_headers: dict | None = None,
+            timeout: float | None = None) -> FetchResult:
         host = urlsplit(url).netloc
         headers = {"Accept": accept} if accept else {}
         headers.update(extra_headers or {})
@@ -94,7 +95,10 @@ class Fetcher:
             if min_delay:
                 _sleep(min_delay)
             try:
-                r = self.client.get(url, headers=headers)
+                if timeout:
+                    r = self.client.get(url, headers=headers, timeout=timeout)
+                else:
+                    r = self.client.get(url, headers=headers)
             except httpx.HTTPError as e:
                 last_err = FetchError(url, f"{type(e).__name__}: {e}")
                 log.warning("network error %s (attempt %d/%d): %s", url, attempt, retries, e)
@@ -153,7 +157,7 @@ class Fetcher:
             stamp = (published or "")[:10].replace("-", "") or "2"
             snap = f"https://web.archive.org/web/{stamp}id_/{url}"
             try:
-                res = self.get(snap, accept="text/html", retries=2)
+                res = self.get(snap, accept="text/html", retries=2, timeout=90)
                 if res.ok and not looks_blocked(res.text):
                     return FetchResult(url, url, res.status, res.text, f"archive:{res.final_url}")
                 errors.append("archive: blocked or empty")
